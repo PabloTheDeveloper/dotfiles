@@ -1,0 +1,42 @@
+# Markdown
+
+snippet []
+	[${1:text}](${2:address})
+
+snippet **
+	**$0**
+snippet blockquote
+	{% blockquote %}
+	${0:quote}
+	{% endblockquote %}
+
+snippet blockquote-author
+	{% blockquote ${1:author}, ${2:title} %}
+	${0:quote}
+	{% endblockquote %}
+
+snippet blockquote-link
+	{% blockquote ${1:author} ${2:URL} ${3:link_text} %}
+	${0:quote}
+	{% endblockquote %}
+
+# Language.
+snippet ```
+	\`\`\`${1:language}
+	${2:code}
+	\`\`\`
+
+# Definition lists
+snippet : Definition list
+	$1
+	: $0
+
+# Custom
+snippet h1
+	# ${1:text}
+
+	**Date**: ${2:YYYY-MM-DD}
+
+	**Time**: ${3:hh:mm p}
+
+	$4

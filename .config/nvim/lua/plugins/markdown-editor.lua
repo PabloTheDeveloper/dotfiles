@@ -26,13 +26,57 @@ return {
 			})
 		end,
 	},
+	-- Meant for automatic file template creation
 	{
-    "glepnir/template.nvim",
-		cmd = {'Template', 'TemProject'},
+		"glepnir/template.nvim",
+		cmd = { "Template", "TemProject" },
 		config = function()
-      require('template').setup({
-							temp_dir ='~/.config/nvim/templates'
+			require("template").setup({
+				temp_dir = "~/.config/nvim/templates",
 			})
-	end,
+		end,
+	},
+	{
+		"toppair/peek.nvim",
+		event = { "VeryLazy" },
+		build = "deno task --quiet build:fast",
+		config = function()
+			require("peek").setup({
+				app = "chromium",
+			})
+			vim.api.nvim_create_user_command("PeekOpen", require("peek").open, {})
+			vim.api.nvim_create_user_command("PeekClose", require("peek").close, {})
+		end,
+	},
+	{
+		"hedyhli/outline.nvim",
+		config = function()
+			-- Example mapping to toggle outline
+			vim.keymap.set("n", "<leader>o", "<cmd>Outline<CR>", { desc = "Toggle Outline" })
+
+			require("outline").setup({
+				-- Your setup opts here (leave empty to use defaults)
+			})
+		end,
+	},
+	-- EasySnippets is more feature filled but this works for now (use tab to invoke after
+	-- typing in keywords)
+	{
+		"dcampos/nvim-snippy",
+		config = function()
+			require("snippy").setup({
+				snippet_dirs = "~/.config/nvim/snippets",
+				local_snippet_dir = "~/.config/nvim/snippets",
+				mappings = {
+					is = {
+						["<Tab>"] = "expand_or_advance",
+						["<S-Tab>"] = "previous",
+					},
+					nx = {
+						["<leader>x"] = "cut_text",
+					},
+				},
+			})
+		end,
 	},
 }

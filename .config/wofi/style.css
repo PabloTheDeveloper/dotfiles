@@ -1,0 +1,37 @@
+
+/* Requires using --gtk-dark flag */
+/*
+ * Make all text this color
+* {
+	color: --wofi-color<N> // insert n here;
+}
+*/
+
+#window {
+	background-color: --wofi-color0;
+	color: --wofi-color1;
+	border-color: --wofi-color2;
+	border: 4px;
+}
+
+
+#entry {
+	background-color: --wofi-color0;
+	color: --wofi-color3;
+}
+
+#entry:selected {
+	background-color: --wofi-color1;
+	color: --wofi-color3;
+	border-color: --wofi-color1;
+}
+
+#input {
+	background-color: --wofi-color0;
+	/*Change text color of the input to gray*/
+	color: --wofi-color2;
+	border-color: --wofi-color1;
+	box-shadow: 0 0 1.5px 1px --wofi-color1;
+	/* makes text from blue to red */
+}
+

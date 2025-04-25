@@ -1,0 +1,14 @@
+# Ignore everything in repository root 
+/*
+
+# Base files to not ignore
+!/.gitignore
+!/README.md
+
+# contains most configs (see
+# .gitignore for what should be
+# included)
+!.config/
+# contains projects and tasks
+!/.readme.md/
+

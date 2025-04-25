@@ -1,0 +1,6 @@
+XDG_DOWNLOAD_DIR="$HOME/tmp/downloads"
+XDG_DOCUMENTS_DIR="$HOME/notes.md/documents"
+XDG_MUSIC_DIR="$HOME/notes.md/media/music"
+XDG_PICTURES_DIR="$HOME/notes.md/media/pictures"
+XDG_VIDEOS_DIR="$HOME/notes.md/media/videos"
+

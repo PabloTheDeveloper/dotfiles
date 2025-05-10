@@ -192,9 +192,9 @@ client.background       #FFFFFF
 for_window [shell="xwayland"] title_format "[XWayland] %title"
 
 # 2025-04-18 - removes titles 
-default_border pixel 1
+default_border pixel 4
 # 2025-04-18 - add sunset and starts kanshi
-# exec_always wlsunset -l 42 -L -71 -t 1000
+exec_always wlsunset -l 42 -L -71 -t 1000
 exec_always pkill kanshi; exec kanshi
 
 font pango:Monospace 14px
@@ -213,22 +213,25 @@ focus_follows_mouse no
 bindsym $mod+d exec ~/.config/sway/scripts/wofi.sh
 
 # Locks on Lid close
-bindswitch --reload lid:on exec 'swaylock -f -c 000000 & systemctl suspend'
+bindswitch --reload lid:on exec 'swaylock -f -c 000000& systemctl suspend'
 
 # Locks after 5m, turn off displays after 6m
 exec swayidle -w \
-				timeout 300 'swaylock -f -c 000000' \
-				timeout 360 'systemctl suspend' \
+				timeout 600 'swaylock -f -c 000000' \
+				timeout 600 'systemctl suspend' \
 				resume 'swaymsg "output * power on"' \
 				before-sleep 'swaylock -f -c 000000'
+# https://stackoverflow.com/questions/68694093/how-to-prevent-swayidle-from-execution-while-watching-a-film
+for_window [class=".*"] inhibit_idle fullscreen
+for_window [app_id=".*"] inhibit_idle fullscreen
 
 # lock & turns off screen w/ Super+l
-bindsym $mod+l exec 'swaylock -f -c 000000 & systemctl suspend'
+bindsym $mod+l exec 'swaylock -f -c 000000& systemctl suspend'
 
 # Wallpaper
 output * bg #000000 solid_color
 
-# or input <identifier>
+# Switch caps w/ escape
 input "type:keyboard" {
     xkb_layout us
     xkb_options caps:escape

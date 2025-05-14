@@ -10,5 +10,5 @@
 # included)
 !.config/
 # contains projects and tasks
-!/.readme.md/
+!/readme.md/
 

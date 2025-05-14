@@ -56,6 +56,20 @@ sudo -S
 sof-firmware
 ```
 
+# Screen Sharing
+(assumes sound was already setup)
+```
+sudo -S obs-studio xdg-desktop-portal xdg-desktop-portal-wlr
+```
+
+To play it back use VLC via:
+```
+sudo -S vlc ffmeg libtheora
+```
+
+Running ffmeg helped me figure
+out what was wrong ffmeg.
+
 # Rarely Used
 
 ## Setup Kanshi

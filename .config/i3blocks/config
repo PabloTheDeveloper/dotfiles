@@ -1,0 +1,73 @@
+# i3blocks config file
+#
+# Please see man i3blocks for a complete reference!
+command=$HOME/.config/i3blocks/$BLOCK_NAME/$BLOCK_NAME
+separator_block_width=10
+markup=none
+
+[disk_root]
+label=Disk:
+instance=/home/dev/
+interval=3600 
+command=$HOME/.config/i3blocks/disk_usage/disk_usage format="{used:.0f}G/{total:.0f}G" warn_color=#90ce00
+markup=pango
+# color=#333333 (color determined in disk_usage script)
+
+[memory]
+command=$HOME/.config/i3blocks/$BLOCK_NAME/$BLOCK_NAME
+label=RAM:
+markup=pango
+color=#333333
+interval=4
+
+[cpu_usage2]
+command=$HOME/.config/i3blocks/$BLOCK_NAME/$BLOCK_NAME
+markup=pango
+color=#333333
+interval=persist
+REFRESH_TIME=4
+LABEL=CPU:
+WARN_PERCENT=60
+CRIT_PERCENT=90
+DECIMALS=0
+
+[brightness]
+command=./brightness/bin/brightness -a /sys/class/backlight/intel_backlight/actual_brightness -m /sys/class/backlight/intel_backlight/max_brightness
+color=#666666
+interval=persist
+
+[volume-pipewire]
+command=$HOME/.config/i3blocks/$BLOCK_NAME/$BLOCK_NAME
+interval=persist
+color=#666666
+signal=1
+LONG_FORMAT="[${NAME}:${VOL}%]"
+SUBSCRIBE=1
+
+[iface]
+command=$HOME/.config/i3blocks/$BLOCK_NAME/$BLOCK_NAME
+color=#666666
+interval=18000 #= 5 * (3600 seconds = 60*60 seconds = 1 hr) = 5 hrs
+display_wifi_name=1
+LABEL=Wifi:
+
+# Date Time
+[time]
+command=date '+%Y-%m-%d'
+interval=18000 #= 5 * (3600 seconds = 60*60 seconds = 1 hr) = 5 hrs
+
+[time]
+command=date '+%I:%M%p'
+interval=60
+
+# Battery indicator
+[battery-custom]
+command=$HOME/.config/i3blocks/$BLOCK_NAME/$BLOCK_NAME
+interval=60
+
+# Github notifications
+[github]
+command=$HOME/.config/i3blocks/$BLOCK_NAME/$BLOCK_NAME
+interval=120
+format=json
+markup=pango

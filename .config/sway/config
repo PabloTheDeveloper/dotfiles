@@ -138,8 +138,8 @@ bindsym $mod+r mode "resize"
     bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +5%
     bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
     # Special keys to adjust brightness via brightnessctl
-    bindsym --locked XF86MonBrightnessDown exec brightnessctl set 1-
-    bindsym --locked XF86MonBrightnessUp exec brightnessctl set 1+
+    bindsym --locked XF86MonBrightnessDown exec brightnessctl set 3%-
+    bindsym --locked XF86MonBrightnessUp exec brightnessctl set 3%+
     # Special key to take a screenshot with grim
     bindsym Print exec grim
 
@@ -213,7 +213,7 @@ focus_follows_mouse no
 bindsym $mod+d exec ~/.config/sway/scripts/wofi.sh
 
 # Locks on Lid close
-bindswitch --reload lid:on exec 'swaylock -f -c 000000& systemctl suspend'
+bindswitch --reload lid:on exec 'kanshi && swaylock -f -c 000000& systemctl suspend'
 
 # Locks after 5m, turn off displays after 6m
 exec swayidle -w \

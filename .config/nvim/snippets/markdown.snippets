@@ -34,7 +34,7 @@ snippet : Definition list
 # Custom
 snippet h1
 	# ${1:text}
-	**Date**: ${2:YYYY-MM-DD}\
+	**Date**: 2025-0${2:M-DD}\
 	**Time**: ${3:hh:mm p}\
 	$4
 
@@ -42,7 +42,7 @@ snippet h1datetimeupdate
 	# ${1:text}
 	| Field         | Label          |
 	| ----------- | --------------- |
-	| **Date**    | ${2:YYYY-MM-DD} |
+	| **Date**    | 2025-0${2:M-DD} |
 	| **Time**		| ${3:hh:mm p}		|
 	| **Project** | ${4:project-title}|
 	| **Update**  | ${5:update} |
@@ -52,16 +52,24 @@ snippet h1datetimespark
 	# ${1:text}
 	| Field         | Label           |
 	| ----------- | --------------- |
-	| **Date**    | ${2:YYYY-MM-DD} |
+	| **Date**    | 2025-0${2:M-DD} |
 	| **Time**		| ${3:hh:mm p}		|
 	| **Spark**  | ${4:update} |
 	$5
 
+snippet h2datetimespark
+	## ${1:text}
+	| Field         | Label           |
+	| ----------- | --------------- |
+	| **Date**    | 2025-0${2:M-DD} |
+	| **Time**		| ${3:hh:mm p}		|
+	| **Spark**  | ${4:update} |
+	$5
 snippet h1datelink
 	# ${1:Video Title}
 	| Field         | Label           |
 	| ----------- | --------------- |
-	| **Date**    | ${2:YYYY-MM-DD} |
+	| **Date**    | 2025-0${2:M-DD} |
 	| **Link** | ${3:project-title}|
 	$4
 
@@ -69,15 +77,82 @@ snippet h1datetime
 	# ${1:text}
 	| Field         | Label           |
 	| ----------- | --------------- |
-	| **Date**    | ${2:YYYY-MM-DD} |
+	| **Date**    | 2025-0${2:M-DD} |
 	| **Time**		| ${3:hh:mm p}		|
+	${4:body}
+
+snippet h2datetime
+	# ${1:text}
+	| Field         | Label           |
+	| ----------- | --------------- |
+	| **Date**    | 2025-0${2:M-DD} |
+	| **Time**		| ${3:hh:mm p}		|
+	${4:body}
 
 snippet h2
 	## ${1:text}
 	**Date**: ${2:YYYY-MM-DD}\
 	**Time**: ${3:hh:mm p}\
-	$4
+	${4:body}
 
 snippet log
 	**Time**: ${3:hh:mm p}\
 	$4
+
+# Timesheets
+snippet timesheet
+	## 2025-0${1}
+	${2}
+	**Daily "How did I?" Questions:**
+	- [ ] Sleep early and Sleep 8hrs
+	- [ ] Exercise
+	- [ ] Eat Healthy & less frequently
+	- [ ] Gain courage over persist negative patterns
+	- [ ] Prep for Leaving Google 
+	- [ ] Find Outlets for My Stress
+	---
+	* 05:30 AM: Exercise, Shower & Commute
+	* 06:30 AM: 
+	* 08:00 AM: **Read Aloud & Breakfast**
+	* 08:30 AM: 
+	* 09:30 AM: Meetings
+	* 10:00 AM:
+	* 11:30 AM: **Lunch**
+	---
+	* 12:30 PM:
+	* 02:30 PM:
+	* 04:00 PM: Commute
+	---
+	* 05:00 PM - 08:00 PM: **Me Time**
+		* (M) (DnD)
+		* (T)
+		* (W) Gym | Coding Time | Call Friends
+		* (R)
+		* (F) (Cats)
+		* (S) (Emma)
+		* (U)
+	---
+	* 08:00 PM: Commute Home & Wear sunglasses 
+	* 08:30 PM: Journal (ni, nm, no)
+	* 09:30 PM: Sleep
+
+snippet timesheetog
+	## 2025-0${1:date}
+	### 05:30 AM - 08:00 AM: Early Morning
+	- [ ] Exercise (15m)
+	- Clean home, journal, plan for day, exercise, Read
+
+	### 08:00 AM - 12:00 PM: Morning
+	- [ ] 
+	- [ ] Breakfast
+	- [ ] 
+	### 12:00 PM - 04:00 PM: Afternoon
+	- [ ]
+	### 04:00 PM - 08:00 PM: Evening
+	- [ ] 
+	### 08:00 PM - 09:30 PM: Get Home & Prepare Sleep
+	- [ ] Misc. errands
+	- [ ] Turn off lights
+	- [ ] Listen to meditation script
+	### 09:30 PM: Sleep
+	- Nothing good comes after 9:30 pm.

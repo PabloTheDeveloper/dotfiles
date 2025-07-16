@@ -4,6 +4,8 @@
 # Base files to not ignore
 !/.gitignore
 !/README.md
+!/.bashrc
+!/.markdownlint.json
 
 # contains most configs (see
 # .gitignore for what should be

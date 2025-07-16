@@ -192,10 +192,10 @@ client.background       #FFFFFF
 for_window [shell="xwayland"] title_format "[XWayland] %title"
 
 # 2025-04-18 - removes titles 
-default_border pixel 4
+# default_border pixel 1 
 # 2025-04-18 - add sunset and starts kanshi
 exec_always wlsunset -l 42 -L -71 -t 1000
-exec_always pkill kanshi; exec kanshi
+exec_always exec kanshi
 
 font pango:Monospace 14px
 
@@ -212,13 +212,16 @@ focus_follows_mouse no
 # Start launcher
 bindsym $mod+d exec ~/.config/sway/scripts/wofi.sh
 
+
 # Locks on Lid close
 bindswitch --reload lid:on exec 'kanshi && swaylock -f -c 000000& systemctl suspend'
 
-# Locks after 5m, turn off displays after 6m
+# Locks after 90m,
+# turn off displays
+# after 60m
 exec swayidle -w \
-				timeout 600 'swaylock -f -c 000000' \
-				timeout 600 'systemctl suspend' \
+				timeout 4800 'swaylock -f -c 000000' \
+				timeout 3600 'systemctl suspend' \
 				resume 'swaymsg "output * power on"' \
 				before-sleep 'swaylock -f -c 000000'
 # https://stackoverflow.com/questions/68694093/how-to-prevent-swayidle-from-execution-while-watching-a-film
@@ -236,3 +239,15 @@ input "type:keyboard" {
     xkb_layout us
     xkb_options caps:escape
 }
+
+
+bindsym $mod+Alt+t exec 'foot nvim notes.md/tasks.md'
+bindsym $mod+Alt+j exec 'foot nvim notes.md/input.md'
+bindsym $mod+Alt+b exec 'brave' # browser
+
+# bindsym $mod+Alt+g exec '' gmail...
+# bindsym $mod+Alt+m exec '' messages...
+# bindsym $mod+Alt+c exec '' calendar...
+# bindsym $mod+Alt+m exec '' messages...
+# bindsym $mod+Alt+m exec '' messages...
+# bindsym $mod+Alt+m exec '' messages...

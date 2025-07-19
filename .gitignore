@@ -4,6 +4,7 @@
 # Base files to not ignore
 !/.gitignore
 !/README.md
+!/README_NEXT_STAGE.md
 !/PROJECTS.md
 !/.bashrc
 !/.markdownlint.json

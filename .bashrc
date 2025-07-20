@@ -72,42 +72,11 @@ xterm*|rxvt*)
     ;;
 esac
 
-# enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
 
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
 fi
 
-# colored GCC warnings and errors
-#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
-
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
-
-# enable programmable completion features (you don't need to enable
-# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
-# sources /etc/bash.bashrc).
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion
@@ -119,97 +88,15 @@ fi
 [[ $- != *i* ]] && return
 
 # shortcuts
-alias v="nvim"
 # If Arch, use pacman.
 if uname -r| grep -iq "arch"; then
-	alias i="sudo pacman -S"
 else
-	alias i="sudo apt-get install"
 fi
-# TODO: add a `cd` command to print contents of README.md file if it
-# exists.
-# TODO: add rule to constrain text of README.md to 80 lines by 80
-# characters.
-#
-# Regarding notes.md project
-alias journal="v $HOME/journal/journal.md" # TODO: Update to be a cli which creates forms for me to select from - some journal entries should be structured.
-alias tasks="v $HOME/journal/tasks.md" #TODO: Similar to above. Have it accept cli tasks. Have it sync with tablet to use whatever's current image/drawing to be a task. Associate that drawing w/ that task.
-alias motivation="v $home/journal/motivation.md"
-
-alias growth="v $HOME/journal/growth.md" #TODO: create CLI which tracks main goals and aspirations. Look to the future for this.
-
-# TODO(pablothedeveloper): source some script to use while in the
-# directory?
-#
-alias no="cd $HOME/repos/sites/personal-site/ && cat mkdocs.yml && cd docs && ls"
-alias noc="cd $HOME/repos/sites/personal-site/docs/coding && v changelog.md" #TODO: auto generate this and write it out at 6:30pm
-alias nor="cd $HOME/repos/sites/personal-site/docs/writings && v reflections.md"
-
-# regarding github projects
-alias pnew="$HOME/repos/go/golang-project-starter/golang-project-starter --tmpls_path $HOME/repos/go/golang-project-starter/templates --absl_path $HOME/repos/go" #TODO figure out how to install this as a binary and set it up.
-
-# adding configs
-alias c='cd $HOME/.config'
-alias cv='cd $HOME/.config/nvim'
-alias cvt='cd $HOME/.config/nvim/templates && ls && v'
-alias cvi='cd $HOME/.config/nvim && v init.lua'
-alias cvp='cd $HOME/.config/nvim/lua/plugins && v markdown-editor.lua'
-alias cvs='cd $HOME/.config/nvim/snippets && v markdown.snippets '
-alias cs='cd $HOME/.config/sway && v config'
-alias ci='cd $HOME/.config/i3blocks && v config'
-alias cf='cd $HOME/.config/foot && v foot.ini'
-alias ck='cd $HOME/.config/kanshi && v config'
-alias cw='cd $HOME/.config/wofi && v config'
-alias cb='cd $HOME && v .bashrc'
-# Tune backlight
-alias b="brightnessctl s"
-alias b0="brightnessctl s 1%"
-alias b1="brightnessctl s 10%"
-alias b1.5="brightnessctl s 15%"
-alias b2="brightnessctl s 20%"
-alias b2.5="brightnessctl s 25%"
-alias b3="brightnessctl s 30%"
-alias b3.5="brightnessctl s 35%"
-alias b4="brightnessctl s 40%"
-alias b4.5="brightnessctl s 45%"
-alias b5="brightnessctl s 50%"
-alias b5.5="brightnessctl s 55%"
-alias b6="brightnessctl s 60%"
-alias b6.5="brightnessctl s 65%"
-alias b7="brightnessctl s 70%"
-alias b7.5="brightnessctl s 75%"
-alias b8="brightnessctl s 80%"
-alias b8.5="brightnessctl s 85%"
-alias b9="brightnessctl s 90%"
-alias b9.5="brightnessctl s 95%"
-alias b10="brightnessctl s 100%"
-
-# wifi
-alias wl="nmcli device wifi list"
-alias wc="nmcli device wifi connect"
-alias ws="nmcli device status"
-alias won="sudo nmcli radio wifi on"
-alias woff="sudo nmcli radio wifi off"
-
-# sourcing files
-alias sb='source $HOME/.bashrc'
-
-# exit
-alias e='exit'
-
-# standard stuff
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
 
 # Change to dark mode
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-
-# print terminal message
-echo "'tasks' - Tasks & Organization"
-echo "'journal' - Internal Thinking."
-echo "Helpful markdown templates: [h1][|datetime|date][spark|update]"
 
 # enable history
 # https://unix.stackexchange.com/questions/736371/how-do-i-get-terminal-to-print-command-history-with-timestamps-for-all-commands
@@ -228,4 +115,14 @@ export PATH="$PATH:/home/dev/.local/bin"
 # from tar file - apt-get doesn't have v.0.10+
 # which is needed for my plugins).
 export PATH="$PATH:/opt/nvim-linux-arm64/bin"
+
+# Import bash_aliases. 
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+
+# Switch to fish.
+fish
+
 

@@ -10,6 +10,7 @@
 # use dark theme when possible
 !/settings.ini
 
+# Allow changes in directories
 !/foot/
 !/nvim/
 !/kanshi/
@@ -17,4 +18,4 @@
 !/systemd/
 !/i3blocks/
 !/wofi/
-
+!/fish/

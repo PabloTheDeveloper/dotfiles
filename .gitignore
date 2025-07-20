@@ -9,11 +9,7 @@
 !/.bashrc
 !/.markdownlint.json
 
-# contains most configs (see
-# .gitignore for what should be
-# included)
+# contains most configs (see .gitignore for what should be included)
 !.config/
-# Where all the
-# desktop files
-# are.
+# Where all the desktop files are.
 !.local/share/applications

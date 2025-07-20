@@ -120,10 +120,12 @@ fi
 
 # shortcuts
 alias v="nvim"
-# TODO: Get OS. IF Ubuntu/Debian w/ apt, use apt.
 # If Arch, use pacman.
-alias i="sudo apt-get install"
-# alias i="sudo pacman -S"
+if uname -r| grep -iq "arch"; then
+	alias i="sudo pacman -S"
+else
+	alias i="sudo apt-get install"
+fi
 # TODO: add a `cd` command to print contents of README.md file if it
 # exists.
 # TODO: add rule to constrain text of README.md to 80 lines by 80

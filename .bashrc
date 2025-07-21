@@ -87,11 +87,6 @@ fi
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# shortcuts
-# If Arch, use pacman.
-if uname -r| grep -iq "arch"; then
-else
-fi
 PS1='[\u@\h \W]\$ '
 
 

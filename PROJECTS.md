@@ -1,95 +1,8 @@
-# Purpose
+# Misc:
+- [ ] Fix i3 bar
+- [ ] 
 
-This repo's purpose is to contain guides that
-are somewhat current to workflows I do
-somewhat often.
-
-# Playbooks
-
-Generally, check the .bashrc file or .zshrc
-file for what I've aliased there.
-
-## Wifi
-
-To connect to a network:
-
-```
-wc
-```
-
-To list networks:
-
-```
-wl
-```
-
-To show device status:
-
-```
-wd
-```
-
-## Sound
-
-Install pipewire and related tools as pulseaudio is rather old.
-
-```
-sudo -S pipewire
-```
-
-```
-sudo -S pipewire-pulse
-```
-
-```
-sudo -S pavucontrol
-```
-
-Use `pavucontrol` to update sound settings.
-
-The default desktop app, which will appear in `wofi`
-launcher is called "Volume Control"
-I also needed to
-install:
-```
-sudo -S
-sof-firmware
-```
-
-# Screen Sharing
-(assumes sound was already setup)
-```
-sudo -S obs-studio xdg-desktop-portal xdg-desktop-portal-wlr
-```
-
-To play it back use VLC via:
-```
-sudo -S vlc ffmeg libtheora
-```
-
-Running ffmeg helped me figure
-out what was wrong ffmeg.
-
-# Rarely Used
-
-## Setup Kanshi
-
-1. run:
-   `swaymsg -t get_outputs`
-
-2. Add right label to `.config/kanshi/config`
-
-3. Following the guide from arch linux (after
-   creation on kanshi file):
-   `systemctl --user enable kanshi.service`
-
-4. enable the sway session:
-   `systemctl --user start sway-session.target`
-
-## Installing App Images
-
-Run:
-`chmod +x apps/<enter app>`
+---
 # Tasks
 - [x] Enable all history being tracked in shell with export HISTTIMEFORMAT="%F %T " and https://unix.stackexchange.com/questions/736371/how-do-i-get-terminal-to-print-command-history-with-timestamps-for-all-commands
 - [ ] Create sessions in history based on commit message (maybe by specifying a certain command?)
@@ -98,7 +11,7 @@ Run:
 - [ ] have a way to export the commit messages.
 
 ## History Log Sessions - Rationale
-To replilcate environments, it is really crucial
+To replicated environments, it is really crucial
 to keep track of which packages are installed
 and which files are updated.
 
@@ -150,8 +63,10 @@ also provide me a way to answer "What was I
 doing?" effectively.
 
 # Keybindings
-- [ ] Update Nvim to use most bindings from Google Docs (I have my reasons)
-- [ ] Update VSCode to use most bindings from Google Docs (I have my reasons)
+~~- [x] Update Nvim to use most bindings from Google Docs (I have my reasons)~~
+* This is mostly supported and I'm find with things not in parity atm (Q32025)
+~~- [ ] Update VSCode to use most bindings from Google Docs (I have my reasons)~~
+* VSCode can wait. Text editor simplicity is much more preferred.
 
 # Nvim specific 
 - [ ] create snippets for common tasks (making a dated journal entry or making a website entry)
@@ -170,3 +85,7 @@ websites visited, tabs viewed, content copied to clipboard, etc.
 This can help me reproduce any issue I'm encountering and encourage a
 simplier path to rollback. It can help me write docs on what I'm doing and
 observe myself and thinkings.
+
+# Projects
+
+

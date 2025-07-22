@@ -214,22 +214,20 @@ bindsym $mod+d exec ~/.config/sway/scripts/wofi.sh
 
 
 # Locks on Lid close
-bindswitch --reload lid:on exec 'kanshi && swaylock -f -c 000000& systemctl suspend'
+bindswitch --reload lid:on exec 'systemctl poweroff'
 
 # Locks after 90m,
 # turn off displays
 # after 60m
 exec swayidle -w \
 				timeout 4800 'swaylock -f -c 000000' \
-				timeout 3600 'systemctl suspend' \
-				resume 'swaymsg "output * power on"' \
-				before-sleep 'swaylock -f -c 000000'
+				timeout 3600 'systemctl poweroff' \
 # https://stackoverflow.com/questions/68694093/how-to-prevent-swayidle-from-execution-while-watching-a-film
 for_window [class=".*"] inhibit_idle fullscreen
 for_window [app_id=".*"] inhibit_idle fullscreen
 
 # lock & turns off screen w/ Super+l
-bindsym $mod+l exec 'swaylock -f -c 000000& systemctl suspend'
+bindsym $mod+l exec 'swaylock -f -c 000000& systemctl poweroff'
 
 # Wallpaper
 output * bg #000000 solid_color

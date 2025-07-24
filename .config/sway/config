@@ -227,7 +227,7 @@ for_window [class=".*"] inhibit_idle fullscreen
 for_window [app_id=".*"] inhibit_idle fullscreen
 
 # lock & turns off screen w/ Super+l
-bindsym $mod+l exec 'swaylock -f -c 000000& systemctl poweroff'
+bindsym $mod+l exec 'swaylock -f -c 000000'
 
 # Wallpaper
 output * bg #000000 solid_color

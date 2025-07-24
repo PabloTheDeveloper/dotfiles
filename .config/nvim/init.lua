@@ -14,9 +14,13 @@ vim.opt.shiftwidth = 2
 vim.opt.termguicolors = true
 -- if using lightline or airline see https://github.com/fenetikm/falcon/wiki/Installation#vim--neovim
 
+-- enables folding
+vim.g.markdownfolding = 1
+
 -- jump to new splits
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 -- This command below doesn't work the way I want it to.
 -- vim.opt.switchbuf = "useopen,usetab,vsplit,split"
+-- markdown folding
 require("config.lazy")

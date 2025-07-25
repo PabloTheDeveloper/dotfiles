@@ -17,10 +17,12 @@ vim.opt.termguicolors = true
 -- enables folding
 vim.g.markdownfolding = 1
 
--- jump to new splits
-vim.opt.splitbelow = true
-vim.opt.splitright = true
+-- Make new splits always split that direction.
+-- vim.opt.splitbelow = true
+vim.opt.splitright = true -- (conflicts w/ default for :Outline)
 -- This command below doesn't work the way I want it to.
 -- vim.opt.switchbuf = "useopen,usetab,vsplit,split"
 -- markdown folding
 require("config.lazy")
+-- outline docs clarify that this is needed.
+-- require("outline").setup({})

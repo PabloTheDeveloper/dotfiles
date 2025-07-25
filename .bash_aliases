@@ -14,11 +14,11 @@ alias nor="cd $HOME/repos/sites/personal-site/docs/writings && v reflections.md"
 # adding configs
 alias c='cd $HOME/.config'
 alias cv='cd $HOME/.config/nvim'
-alias cvt='cd $HOME/.config/nvim/templates && ls && v'
-alias cvi='cd $HOME/.config/nvim && v init.lua'
-alias cvp='cd $HOME/.config/nvim/lua/plugins && v markdown-editor.lua'
-alias cvs='cd $HOME/.config/nvim/snippets && v markdown.snippets '
-alias cs='cd $HOME/.config/sway && v config'
+alias cvt='v $HOME/.config/nvim/templates'
+alias cvi='v $HOME/.config/nvim && v init.lua'
+alias cvp='v $HOME/.config/nvim/lua/plugins'
+alias cvs='v $HOME/.config/nvim/snippets/markdown.snippets'
+alias cs='v $HOME/.config/sway/config'
 alias ci='cd $HOME/.config/i3blocks && v config'
 alias cf='cd $HOME/.config/foot && v foot.ini'
 alias ck='cd $HOME/.config/kanshi && v config'
@@ -66,3 +66,4 @@ alias init='cd $HOME/repos/init && ls'
 # regarding github projects
 alias pnew="$HOME/repos/go/golang-project-starter/golang-project-starter --tmpls_path $HOME/repos/go/golang-project-starter/templates --absl_path $HOME/repos/go" #TODO figure out how to install this as a binary and set it up.
 
+alias project="v \"$HOME/repos\" +Outline +OutlineFocusCode +\"vsplit $HOME/PROJECTS.md\" +\"split $HOME/CHANGELOG.md\" +\"tabnew\" +\"term\""

@@ -249,3 +249,10 @@ bindsym $mod+Alt+b exec 'brave' # browser
 # bindsym $mod+Alt+m exec '' messages...
 # bindsym $mod+Alt+m exec '' messages...
 # bindsym $mod+Alt+m exec '' messages...
+
+# Adjust the delay in milliseconds (e.g., 200ms)
+# Adjust the repeat rate in characters per second (e.g., 60cps)
+input "type:keyboard" {
+ 	 repeat_delay 200
+	 repeat_rate 120
+}

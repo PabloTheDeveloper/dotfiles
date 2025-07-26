@@ -37,7 +37,7 @@ snippet h1datetime
 	| Field         | Label           |
 	| ----------- | --------------- |
 	| **Date**    | `!lua os.date('%Y-%M-%d')` |
-	| **Time**		| `!lua os.date('%H:%M %p')` |
+	| **Time**		| `!lua os.date('%I:%M %p')` |
 
 	${2:body}
 
@@ -47,7 +47,7 @@ snippet h2datetime
 	| Field         | Label           |
 	| ----------- | --------------- |
 	| **Date**    | `!lua os.date('%Y-%M-%d')` |
-	| **Time**		| `!lua os.date('%H:%M %p')` |
+	| **Time**		| `!lua os.date('%I:%M %p')` |
 
 	${2:body}
 
@@ -57,7 +57,7 @@ snippet h1datetimespark
 	| Field         | Label           |
 	| ----------- | --------------- |
 	| **Date**    | `!lua os.date('%Y-%M-%d')` |
-	| **Time**		| `!lua os.date('%H:%M %p')` |
+	| **Time**		| `!lua os.date('%I:%M %p')` |
 	| **Spark**  | ${2:update} |
 
 	$3
@@ -68,7 +68,7 @@ snippet h2datetimespark
 	| Field         | Label           |
 	| ----------- | --------------- |
 	| **Date**    | `!lua os.date('%Y-%M-%d')` |
-	| **Time**		| `!lua os.date('%H:%M %p')` |
+	| **Time**		| `!lua os.date('%I:%M %p')` |
 	| **Spark**  | ${2:update} |
 
 	$3
@@ -79,7 +79,7 @@ snippet h1datelink
 	| Field         | Label           |
 	| ----------- | --------------- |
 	| **Date**    | `!lua os.date('%Y-%M-%d')` |
-	| **Time**		| `!lua os.date('%H:%M %p')` |
+	| **Time**		| `!lua os.date('%I:%M %p')` |
 	| **Link** | ${2:link}|
 
 	$3
@@ -90,7 +90,7 @@ snippet h1datetimeupdate
 	| Field         | Label          |
 	| ----------- | --------------- |
 	| **Date**    | `!lua os.date('%Y-%M-%d')` |
-	| **Time**		| `!lua os.date('%H:%M %p')` |
+	| **Time**		| `!lua os.date('%I:%M %p')` |
 	| **Update**  | ${2:update} |
 
 	$3
@@ -192,11 +192,11 @@ snippet timesheet
 	* 09:30 PM: Sleep
 
 snippet time
-	`!lua os.date('%H:%M %p')`: $1
+	(`!lua os.date('%I:%M %p')`)
 
-snippet timeli
-	* `!lua os.date('%H:%M %p')`: $1
+snippet li
+	* `!lua os.date('%I:%M %p')`: $1
 
-snippet timecheck
-	- [ ] `!lua os.date('%H:%M %p')`: $1
+snippet check
+	- [ ] `!lua os.date('%I:%M %p')`: $1
 

@@ -103,21 +103,8 @@ HISTFILESIZE=10000
 # https://superuser.com/questions/555310/bash-save-history-without-exit
 export PROMPT_COMMAND="history -a;history -n;$PROMPT_COMMAND"
 
-# Created by `pipx` on 2025-07-06 12:58:54
-export PATH="$PATH:/home/dev/.local/bin"
-
-# For snapdragon laptop (TODO: auto install
-# from tar file - apt-get doesn't have v.0.10+
-# which is needed for my plugins).
-export PATH="$PATH:/opt/nvim-linux-arm64/bin"
-
 # Import bash_aliases. 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
-
-
-# Switch to fish.
-fish
-
 

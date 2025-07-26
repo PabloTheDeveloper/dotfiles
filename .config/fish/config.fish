@@ -23,3 +23,10 @@ set -g __fish_git_prompt_color_untrackedfiles $fish_color_normal
 # import bash aliases
 source ~/.bash_aliases
 
+# Created by `pipx` on 2025-07-06 12:58:54
+export PATH="$PATH:/home/dev/.local/bin"
+
+# For snapdragon laptop (TODO: auto install
+# from tar file - apt-get doesn't have v.0.10+
+# which is needed for my plugins).
+export PATH="$PATH:/opt/nvim-linux-arm64/bin"

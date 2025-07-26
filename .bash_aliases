@@ -55,7 +55,7 @@ alias woff="sudo nmcli radio wifi off"
 # sourcing files
 alias sb='source $HOME/.bashrc'
 # exit
-alias e='exit'
+alias e='exit & exit'
 # standard stuff
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'

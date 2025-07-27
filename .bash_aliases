@@ -64,6 +64,8 @@ alias u='git pull'
 alias init='cd $HOME/repos/init && ls'
 
 # regarding github projects
+# Assumes many things... so make it
+# a binary at some point.
 alias pnew="$HOME/repos/go/golang-project-starter/golang-project-starter --tmpls_path $HOME/repos/go/golang-project-starter/templates --absl_path $HOME/repos/go" #TODO figure out how to install this as a binary and set it up.
 
 alias project="v \"$HOME/repos\" +Outline +OutlineFocusCode +\"vsplit $HOME/PROJECTS.md\" +\"split $HOME/CHANGELOG.md\" +\"tabnew\" +\"term\""

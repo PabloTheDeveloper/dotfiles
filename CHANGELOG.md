@@ -1,28 +1,82 @@
-Contains updates on day to day programming.
+Contains daily logs for for various projects' progress.
+The layout is -
+```
+* <quarter>
+    * <date>
+      * <repo name>
+        * <subproject / area>
+        * <subproject / area>
+      * <repo name>
+...
+```
+# Changelog 2025Q3
 
-# Changelogs
-Contains up
+## 2025-07-27
+### Misc
+- [ ] Setup up Digma.
+    - [ ] Install Bazecor
+    - [ ] Import settings (from windows).
+- [ ] Setup desk to be more easier to work.
+- [ ] Setup dygma (arm linux version doesn't work)
+### .dotfiles
+#### Sway
+- [ ] Update standard bindings to navigate 
+#### Tmux
+- [ ] Setup standard bindings to navigate 
+#### Nvim
+- [ ] Go through lua tutorial in nvim.
+- [ ] Show whitespace
+- [ ] Update snippets to query counts like,
+  no sweets, no takeout, walked, hours
+  slept, etc
+- [ ] Setup standarized bindings to navigate
+
+## 2025-07-26
+### Init
+- [x] Fix fonts & icons on snapdragon ubuntu laptop (03:00 PM)
+### .dotfiles
+- [x] Speed up rate of repeat key and delay (03:21 PM)
+#### Terminal
+  renderer.
+- [x] (03:44 PM) Update fish to not have terminal display battery life. (04:01 PM)
+- [x] Make fish default shell instead of nesting it within bash. ~~(actually maybe this is
+  better - I ended up modifying my exit alias "e") (04:03 PM)~~ actually it was easier to
+  just make it the default. Hopefully, I didn't break anything (04:08 PM). (04:14 PM) it
+  works.
+##### Markdown
+- [x] Correct time in snippets - shows 24hr format instead of 12hr format.
+  * Using the lua programming lang guide helped here instead of guessing the
+    format and hoping I'm right.
+- [x] add snippet to create checkbox w/ time (called check)
+- [x] add snippet to create date via "date"
+
+## 2025-07-25
+##### Markdown
+- [x] Update snippets to use date and time
+  functionality
+- [x] Have it show everything from the outline.
+
 ## 2025-07-24
 
-### Carbon:
+### .dotfiles
 - [x] Need to make nuc upload its `.bash_aliases` file.
 - [x] Fix i3 bar on snapdragon.
 - [x] Add git diff to Nvim. (:Neogit)
 
-#### Learnings:
+#### Learnings
 * I3blocks requires `make` calls to compile and build
   binaries. The apt repo can have outdated packages like it
   did for the `i3blocks` package so sometimes I gotta install
   from the repo.
 
 ## 2025-07-21
-### Go Github Sync:
+### Go Github Sync
 - [x] create sync project go-github-sync
   - [x] import golang-project-starter and use it
   * Realized golang-project-starter is missing a
     .gitignore file for the binary I'd generate with
     `go build`.
-### Go Project Starter:
+### Go Project Starter
 - [x] run project starter for go-github-sync
 - [x] Add .gitignore to
     golang-project-starter.
@@ -33,7 +87,7 @@ Contains up
     {{foobar}} is different from
     {{.foobar}}. The latter is a
     replacement and the former is a function of some kind.
-### **Carbon**:
+### **.dotfiles**
 - [x] Updated vim settings to split
 	right and split bottom.
     * It drove me nuts how it would open on the left
@@ -41,7 +95,7 @@ Contains up
 - [x] Updated PROJECTS.md and created CHANGELOG.md to
   better organize projects. Created a description for
   the go-session-logger.
-#### Learnings:
+#### Learnings
 * Learned I can use :term and create nvim session inside it.
 * :luafile $PATH\_TO\_INIT\_FILE
 	SYNCS\_CHANGES lets me sync files instantly.

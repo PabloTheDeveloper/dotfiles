@@ -1,6 +1,6 @@
 # Projects
 ## Q32025
-### Go Github Sync:
+### Go Github Sync
 - [ ] Execute bash command that does this.
 * The logic is easy - walk the directories and call git
   pull on each one.
@@ -10,7 +10,7 @@
 - [ ] Translate to Golang & create a integration test
   (key for other scripts so needs to be done).
 
-### Go Session Logger:
+### Go Session Logger
 - [ ] Programmatically open Tmux in split view.
 - [ ] Programmatically open Nvim in vertical split view with
   CHANGELOG.md and PROJECTS.md in the left tmux pane.
@@ -29,26 +29,13 @@
   like streaming a Youtube video, continueing on my
   project work, checking my email, exercising etc.
 
-### Carbon:
-#### Sway:
-- [ ] Update standard bindings to navigate 
-#### Tmux:
-- [ ] Setup standard bindings to navigate 
-#### Nvim:
-- [ ] Go through lua tutorial in nvim.
-- [ ] Show whitespace
-- [x] Update snippets to use date and time
-  functionality
-- [ ] Update snippets to query counts like,
-  no sweets, no takeout, walked, hours
-  slept, etc
-- [ ] Setup standarized bindings to navigate
-##### Markdown:
+### .dotfiles
+##### Markdown
 - [ ] Auto open :Outline on md files on the left.
 - [ ] Auto open :Outline for **each** file split vertically (for
   example a split between PROJECTS.md and CHANGELOG.md would have
   two separate outlines.
-- [ ] Have it show everything from the outline.
+- [x] Have it show everything from the outline.
 - [ ] Make markdown lint or visualizer not require whitespace between lists or headers.
 - [ ] For publishable docs, have it convert some base markdown into commonMark, github flavor markdown, etc..
 - [ ] Add summary of different nvim commands I can run.
@@ -61,7 +48,7 @@
   right nesting level without issue.
 - [ ] Update live markdown visualizer to not add spaces
   between headers and text that follows.
-#### Git/Github:
+#### Git/Github
 - [ ] Make it easier to create better commits by:
     1. diff changes
     2. for each file choose to add it to the commit or defer adding it
@@ -71,11 +58,7 @@
 - [ ] Constantly visualize commit tree.
 - [ ] Find standardize commit message templates - add them to github templates.
 - [ ] Add github actions for CI/CD testing modules.
-#### Terminal:
-- [ ] Update fish to not have terminal display battery life.
-- [ ] Make fish default shell instead of nesting it within bash.
-
-
+#### Terminal
 # Epic Projects
 ## Useful Activity Logger (status: blocked till #carbon & #go-session-logger are more completed).
 I should track everything going on with my laptop.

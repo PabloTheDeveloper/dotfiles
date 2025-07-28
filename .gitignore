@@ -10,6 +10,7 @@
 !/.bashrc
 !/.bash_aliases
 !/.generated_repo_aliases
+!/.generated_repo_list.json
 !/.markdownlint.json
 
 # contains most configs (see .gitignore for what should be included)

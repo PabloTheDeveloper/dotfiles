@@ -33,3 +33,11 @@ export PATH="$PATH:/home/dev/.local/bin"
 # from tar file - apt-get doesn't have v.0.10+
 # which is needed for my plugins).
 export PATH="$PATH:/opt/nvim-linux-arm64/bin"
+# export env vars
+# for default
+# locations
+export DOWNLOADS="$HOME/tmp/downloads"
+export DOCUMENTS="$HOME/files/documents"
+export MUSIC="$HOME/files/music"
+export PICTURES="$HOME/files/pictures"
+export VIDEOS="$HOME/files/videos"

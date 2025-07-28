@@ -69,3 +69,11 @@ alias init='cd $HOME/repos/init && ls'
 alias pnew="$HOME/repos/go/golang-project-starter/golang-project-starter --tmpls_path $HOME/repos/go/golang-project-starter/templates --absl_path $HOME/repos/go" #TODO figure out how to install this as a binary and set it up.
 
 alias project="v \"$HOME/repos\" +Outline +OutlineFocusCode +\"vsplit $HOME/PROJECTS.md\" +\"split $HOME/CHANGELOG.md\" +\"tabnew\" +\"term\""
+
+# aliases for
+# default locations
+alias downloads="cd $DOWNLOADS"
+alias documents="cd $DOCUMENTS"
+alias videos="cd $VIDEOS"
+alias music="cd $MUSIC"
+alias pictures="cd $PICTURES"

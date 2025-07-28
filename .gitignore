@@ -9,6 +9,7 @@
 !/CHANGELOG.md
 !/.bashrc
 !/.bash_aliases
+!/.generated_repo_aliases
 !/.markdownlint.json
 
 # contains most configs (see .gitignore for what should be included)

@@ -23,6 +23,9 @@ set -g __fish_git_prompt_color_untrackedfiles $fish_color_normal
 # import bash aliases
 source ~/.bash_aliases
 
+# import generated aliases
+source ~/.generated_repo_aliases
+
 # Created by `pipx` on 2025-07-06 12:58:54
 export PATH="$PATH:/home/dev/.local/bin"
 

@@ -4,7 +4,7 @@ profile home-odyssey-55-in-monitor {
 				# lenovo built in display
 				output eDP-1 disable
 				# 55 Inch Home Monitor
-				output "Samsung Electric Company Odyssey Ark H1AK500000" position 1920,0 mode 3840x2160@60Hz scale 2.0
+				output "Samsung Electric Company Odyssey Ark H1AK500000" position 1920,0 mode 3840x2160@60Hz scale 3.0
 }
 
 profile office-32-in-monitor {
@@ -17,5 +17,5 @@ profile laptop-only {
 }
 
 profile desktop-odyssey-55-in-monitor {
-				output DP-1 enable scale 2.0
+				output DP-1 enable scale 3.0
 }

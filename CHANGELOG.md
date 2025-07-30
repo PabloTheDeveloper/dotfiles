@@ -33,14 +33,13 @@ The layout is -
 - [ ] Setup standard bindings to navigate 
 #### Nvim
 - [ ] Go through lua tutorial in nvim.
-- [ ] Show whitespace
 - [ ] Update snippets to query counts like,
   no sweets, walked, hours, morning sun
   slept, etc
 - [ ] Setup standarized bindings to navigate
 ### Go Github Sync
-- [ ] Setup testing infrastructure
-- [ ] check for pushes
+- [ ] Setup testing infrastructure.
+- [ ] Test with a docker image.
 ### Go To
 - [ ] Make go-to a module to import
 - [ ] Make it be called upon using the aliases generated
@@ -50,16 +49,31 @@ The layout is -
 - [ ] Add shell script & alias which inserts some command to the
   end of both arch and snapdragon ubuntu setups.
 ## 2025-07-31
+### Dotfiles
+- [ ] Figure out why if I make a `.config/` change, it
+  doesn't get tracked even if I do git add * and even if the
+  `git config set advice.addIgnoredFile false` is set.
+#### Nvim
+- [ ] Learn how to fold everything except selection.
+    * Very useful for focusing on changes.
+- [ ] Go through lua tutorial in nvim.
+#### Markdown
+- [ ] Prevent empty lines in markdown files.
+- [ ] Create git message template for updating changelog
+  file at end or start of day with latest or previous
+  entries.
+### Init
+- [ ] Add shell script & alias which inserts some command to the
+  end of both arch and snapdragon ubuntu setups.
 ### Quotes
 - [ ] Publish as a module.
 ### Go Github Sync
 - [ ] Have it push once it pulls changes
     * The concern here is with merge conflicts.
     * I suppose I can remember when I'm using this.
-- [ ] Configure to use Go-Github-Sync & Go-To
-- [ ] Test with a docker image.
+- [ ] Configure to use Go-To
 ## 2025-07-30
-### Misc
+### Dotfiles
 - [x] Startup Copyq on each sway instance.
 - [ ] Use Mod+N, Mod+P, to, pop open copyq, and navigate up/down
   copying.
@@ -68,15 +82,8 @@ The layout is -
 - [x] Add alias `changelog` to startup a changelog instance.
 #### Nvim
 - [x] Add env var for NVIM and other configs often gone to.
-- [ ] Go through lua tutorial in nvim.
 - [x] Show whitespace. (the :set list command does it)
-- [ ] Learn how to fold everything except selection.
-    * Very useful for focusing on changes.
-### Init
-- [ ] Add shell script & alias which inserts some command to the
-  end of both arch and snapdragon ubuntu setups.
 ## 2025-07-29
-
 ### Misc
 - [x] installed fuse on desktop which is required to setup Bazecor
 - [x] use main as default branch name instead of master

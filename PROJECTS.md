@@ -29,7 +29,7 @@
   like streaming a Youtube video, continueing on my
   project work, checking my email, exercising etc.
 
-### .dotfiles
+### Dotfiles
 ##### Markdown
 - [ ] Auto open :Outline on md files on the left.
 - [ ] Auto open :Outline for **each** file split vertically (for

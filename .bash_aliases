@@ -81,3 +81,7 @@ alias documents="cd $DOCUMENTS"
 alias videos="cd $VIDEOS"
 alias music="cd $MUSIC"
 alias pictures="cd $PICTURES"
+
+# Exported variables
+export NVIM="/home/dev/.config/nvim"
+export NVIM_INIT="/home/dev/.config/nvim/init.lua"

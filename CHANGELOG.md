@@ -52,6 +52,12 @@ The layout is -
 ## 2025-07-31
 ### Quotes
 - [ ] Publish as a module.
+### Go Github Sync
+- [ ] Have it push once it pulls changes
+    * The concern here is with merge conflicts.
+    * I suppose I can remember when I'm using this.
+- [ ] Configure to use Go-Github-Sync & Go-To
+- [ ] Test with a docker image.
 ## 2025-07-30
 ### Misc
 - [ ] Startup Copyq on each sway instance.
@@ -61,18 +67,12 @@ The layout is -
 - [x] Add started, paused and completed, yesterday, tommorow snippets to generate timestamp with those tags. (completed: 07:38 PM)
 - [x] Add alias `changelog` to startup a changelog instance.
 #### Nvim
-- [ ] Add env var for NVIM and other configs often gone to.
+- [x] Add env var for NVIM and other configs often gone to.
 - [ ] Go through lua tutorial in nvim.
 - [x] Show whitespace. (the :set list command does it)
 - [ ] Learn how to fold everything except selection.
     * Very useful for focusing on changes.
-### Go Github Sync
-- [ ] Have it push once it pulls changes
-    * The concern here is with merge conflicts.
-    * I suppose I can remember when I'm using this.
 ### Init
-- [ ] Configure to use Go-Github-Sync & Go-To
-- [ ] Test with a docker image.
 - [ ] Add shell script & alias which inserts some command to the
   end of both arch and snapdragon ubuntu setups.
 ## 2025-07-29

@@ -14,6 +14,9 @@ vim.opt.shiftwidth = 2
 vim.opt.termguicolors = true
 -- if using lightline or airline see https://github.com/fenetikm/falcon/wiki/Installation#vim--neovim
 
+-- Renders whitespace using special characters.
+vim.opt.list = true
+
 -- enables folding
 vim.g.markdownfolding = 1
 

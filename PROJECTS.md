@@ -60,13 +60,17 @@
 - [ ] Add github actions for CI/CD testing modules.
 #### Terminal
 # Epic Projects
-## Useful Activity Logger (status: blocked till #carbon & #go-session-logger are more completed).
+## Useful Activity Logger
+
 I should track everything going on with my laptop.
 By everything I mean shell commands, packages installed, config changes,
 websites visited, tabs viewed, content copied to clipboard, etc.
 This can help me reproduce any issue I'm encountering and encourage a
 simplier path to rollback. It can help me write docs on what I'm doing and
 observe myself and thinkings.
+
+### (status: blocked)
+till #carbon & #go-session-logger are more completed.
 
 ### Tasks
 - [ ] Create sessions in history based on commit message (maybe by specifying a certain command?)

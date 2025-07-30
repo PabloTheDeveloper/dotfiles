@@ -8,7 +8,7 @@ return {
 			require("outline").setup({
 				outline_window = {
 					position = 'left',
-					width = 20,
+					width = 35,
 					relative_width = true
 				},
 				symbol_folding = {

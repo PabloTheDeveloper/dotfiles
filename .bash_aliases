@@ -68,7 +68,8 @@ alias init='cd $HOME/repos/init && ls'
 # a binary at some point.
 alias pnew="$HOME/repos/go/golang-project-starter/golang-project-starter --tmpls_path $HOME/repos/go/golang-project-starter/templates --absl_path $HOME/repos/go" #TODO figure out how to install this as a binary and set it up.
 
-alias project="v \"$HOME/repos\" +Outline +OutlineFocusCode +\"vsplit $HOME/PROJECTS.md\" +\"split $HOME/CHANGELOG.md\" +\"tabnew\" +\"term\""
+# Should be run at the start of any work session to sync and plan out future changes.
+alias project="cd $HOME/repos/go/go-github-sync && go run . && cd $HOME && v -O $HOME/CHANGELOG.md +Outline +OutlineFocusCode +\"tabnew\" +\"e $HOME/PROJECTS.md\" +Outline +OutlineFocusOutline"
 
 # aliases for
 # default locations

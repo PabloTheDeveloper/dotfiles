@@ -10,15 +10,14 @@ The layout is -
 ...
 ```
 # Changelog 2025Q3
-
-## 2025-07-27
+## TODOs
 ### Misc
 - [ ] Setup up Digma.
     - [ ] Install Bazecor
     - [ ] Import settings (from windows).
 - [ ] Setup desk to be more easier to work.
 - [ ] Setup dygma (arm linux version doesn't work)
-### .dotfiles
+### Dotfiles
 #### Sway
 - [ ] Update standard bindings to navigate 
 #### Tmux
@@ -27,14 +26,40 @@ The layout is -
 - [ ] Go through lua tutorial in nvim.
 - [ ] Show whitespace
 - [ ] Update snippets to query counts like,
-  no sweets, no takeout, walked, hours
+  no sweets, walked, hours, morning sun
   slept, etc
 - [ ] Setup standarized bindings to navigate
+## 2025-07-30
+### Misc
+### Dotfiles
+- [ ] Add git diff gutter
+- [ ] Add git merging
+### Go Github Sync
+- [ ] Setup testing infrastructure
+- [ ] check for pushes
+### Go To
+- [ ] Make go-to a module to import
+- [ ] Make it be called upon using the aliases generated
+### Init
+- [ ] Configure to use Go-Github-Sync & Go-To
+- [ ] Test with a docker image.
+
+## 2025-07-29
+
+### Misc
+- [x] installed fuse on desktop which is required to setup Bazecor
+- [x] use main as default branch name instead of master
+### Dotfiles
+- [x] fix fish error msg caused by using '-' in export and alias function
+* Note, bash would have complained too - so fish's rules help here.
+### Go Github Sync
+- [x] Get sync more functional by having it import correctly.
+- [x] Add to .gitignore
 
 ## 2025-07-26
 ### Init
 - [x] Fix fonts & icons on snapdragon ubuntu laptop (03:00 PM)
-### .dotfiles
+### Dotfiles
 - [x] Speed up rate of repeat key and delay (03:21 PM)
 #### Terminal
   renderer.
@@ -58,7 +83,7 @@ The layout is -
 
 ## 2025-07-24
 
-### .dotfiles
+### Dotfiles
 - [x] Need to make nuc upload its `.bash_aliases` file.
 - [x] Fix i3 bar on snapdragon.
 - [x] Add git diff to Nvim. (:Neogit)
@@ -87,7 +112,7 @@ The layout is -
     {{foobar}} is different from
     {{.foobar}}. The latter is a
     replacement and the former is a function of some kind.
-### **.dotfiles**
+### **Dotfiles**
 - [x] Updated vim settings to split
 	right and split bottom.
     * It drove me nuts how it would open on the left

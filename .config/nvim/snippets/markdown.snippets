@@ -201,3 +201,21 @@ snippet check
 	- [ ] (`!lua os.date('%I:%M %p')`): $1
 snippet date
 	`!lua os.date('%Y-%m-%d')`
+
+snippet today
+	`!lua os.date('%Y-%m-%d')`
+
+snippet yesterday 
+	`!lua os.date('%Y-%m-%d', os.time(os.date("*t"))-(24 * 60 * 60))`
+
+snippet tomorrow 
+	`!lua os.date('%Y-%m-%d', os.time(os.date("*t"))+(24 * 60 * 60))`
+
+snippet started
+	(started: `!lua os.date('%I:%M %p')`)
+
+snippet paused
+	(paused: `!lua os.date('%I:%M %p')`)
+
+snippet completed
+	(completed: `!lua os.date('%I:%M %p')`)

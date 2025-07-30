@@ -2,11 +2,19 @@ Contains daily logs for for various projects' progress.
 The layout is -
 ```
 * <quarter>
+    * TODOS // for each project
+        * <repo name>
+            * <subproject / area>
+            * <subproject / area>
+            * ...
+        * ...
+    
     * <date>
-      * <repo name>
-        * <subproject / area>
-        * <subproject / area>
-      * <repo name>
+        * <repo name>
+            * <subproject / area>
+            * <subproject / area>
+            * ...
+        * ...
 ...
 ```
 # Changelog 2025Q3
@@ -15,9 +23,10 @@ The layout is -
 - [ ] Setup up Digma.
     - [ ] Install Bazecor
     - [ ] Import settings (from windows).
-- [ ] Setup desk to be more easier to work.
-- [ ] Setup dygma (arm linux version doesn't work)
+- [ ] Setup dygma on linux (arm linux version won't work)
 ### Dotfiles
+- [ ] Add git diff gutter
+- [ ] Add git merging
 #### Sway
 - [ ] Update standard bindings to navigate 
 #### Tmux
@@ -29,11 +38,6 @@ The layout is -
   no sweets, walked, hours, morning sun
   slept, etc
 - [ ] Setup standarized bindings to navigate
-## 2025-07-30
-### Misc
-### Dotfiles
-- [ ] Add git diff gutter
-- [ ] Add git merging
 ### Go Github Sync
 - [ ] Setup testing infrastructure
 - [ ] check for pushes
@@ -43,12 +47,40 @@ The layout is -
 ### Init
 - [ ] Configure to use Go-Github-Sync & Go-To
 - [ ] Test with a docker image.
-
+- [ ] Add shell script & alias which inserts some command to the
+  end of both arch and snapdragon ubuntu setups.
+## 2025-07-31
+### Quotes
+- [ ] Publish as a module.
+## 2025-07-30
+### Misc
+- [ ] Startup Copyq on each sway instance.
+- [ ] Use Mod+N, Mod+P, to, pop open copyq, and navigate up/down
+  copying.
+#### Markdown
+- [x] Add started, paused and completed, yesterday, tommorow snippets to generate timestamp with those tags. (completed: 07:38 PM)
+- [x] Add alias `changelog` to startup a changelog instance.
+#### Nvim
+- [ ] Add env var for NVIM and other configs often gone to.
+- [ ] Go through lua tutorial in nvim.
+- [ ] Show whitespace.
+- [ ] Learn how to fold everything except selection.
+    * Very useful for focusing on changes.
+### Go Github Sync
+- [ ] Have it push once it pulls changes
+    * The concern here is with merge conflicts.
+    * I suppose I can remember when I'm using this.
+### Init
+- [ ] Configure to use Go-Github-Sync & Go-To
+- [ ] Test with a docker image.
+- [ ] Add shell script & alias which inserts some command to the
+  end of both arch and snapdragon ubuntu setups.
 ## 2025-07-29
 
 ### Misc
 - [x] installed fuse on desktop which is required to setup Bazecor
 - [x] use main as default branch name instead of master
+- [x] Setup desk to be more easier to work.
 ### Dotfiles
 - [x] fix fish error msg caused by using '-' in export and alias function
 * Note, bash would have complained too - so fish's rules help here.

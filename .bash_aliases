@@ -71,6 +71,9 @@ alias pnew="$HOME/repos/go/golang-project-starter/golang-project-starter --tmpls
 # Should be run at the start of any work session to sync and plan out future changes.
 alias project="cd $HOME/repos/go/go-github-sync && go run . && cd $HOME && v -O $HOME/CHANGELOG.md +Outline +OutlineFocusCode +\"tabnew\" +\"e $HOME/PROJECTS.md\" +Outline +OutlineFocusOutline"
 
+# To run if need to reset Markdown snippets.
+alias changelog="v -O $HOME/CHANGELOG.md +Outline +OutlineFocusOutline"
+
 # aliases for
 # default locations
 alias downloads="cd $DOWNLOADS"

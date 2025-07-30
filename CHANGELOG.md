@@ -60,7 +60,7 @@ The layout is -
 - [ ] Test with a docker image.
 ## 2025-07-30
 ### Misc
-- [ ] Startup Copyq on each sway instance.
+- [x] Startup Copyq on each sway instance.
 - [ ] Use Mod+N, Mod+P, to, pop open copyq, and navigate up/down
   copying.
 #### Markdown

@@ -12,9 +12,10 @@
 
 ### Go Session Logger
 - [ ] Programmatically open Tmux in split view.
-- [ ] Programmatically open Nvim in vertical split view with
-  CHANGELOG.md and PROJECTS.md in the left tmux pane.
-- [ ] Open terminal session on the right.
+- [x] ~~Programmatically open Nvim in vertical split view with
+  CHANGELOG.md and PROJECTS.md in the left tmux
+  pane.~~ Actually, I updated the requirements for
+  this - it should call the `project` alias instead.
 - [ ] Write instructions in CHANGELOG.md at the new
   entry.
 - [ ] Have me carry over / edit the previous day's todos

@@ -63,7 +63,7 @@ The layout is -
 #### Nvim
 - [ ] Add env var for NVIM and other configs often gone to.
 - [ ] Go through lua tutorial in nvim.
-- [ ] Show whitespace.
+- [x] Show whitespace. (the :set list command does it)
 - [ ] Learn how to fold everything except selection.
     * Very useful for focusing on changes.
 ### Go Github Sync

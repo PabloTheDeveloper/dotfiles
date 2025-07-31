@@ -1,9 +1,4 @@
-# Ignore everything in repository root 
-/*
-
-# Base files to not ignore
 !/.gitignore
-!/README.md
 
 # places my directories in specific places
 !/user-dirs.dirs

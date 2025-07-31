@@ -50,9 +50,11 @@ The layout is -
   end of both arch and snapdragon ubuntu setups.
 ## 2025-07-31
 ### Dotfiles
-- [ ] Figure out why if I make a `.config/` change, it
+- [x] Figure out why if I make a `.config/` change, it
   doesn't get tracked even if I do git add * and even if the
   `git config set advice.addIgnoredFile false` is set.
+  * This was because the I didn't add a /* to the
+    end.
 #### Nvim
 - [ ] Learn how to fold everything except selection.
     * Very useful for focusing on changes.

@@ -6,12 +6,12 @@
 !/settings.ini
 
 # Allow changes in directories
-!/foot/*
-!/nvim/*
-!/kanshi/*
-!/sway/*
-!/systemd/*
-!/i3blocks/*
-!/wofi/*
-!/fish/*
-!/copyq/*
+!/.config/foot/*
+!/.config/nvim/*
+!/.config/kanshi/*
+!/.config/sway/*
+!/.config/systemd/*
+!/.config/i3blocks/*
+!/.config/wofi/*
+!/.config/fish/*
+!/.config/copyq/*

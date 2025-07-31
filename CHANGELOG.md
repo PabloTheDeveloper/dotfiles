@@ -75,7 +75,7 @@ The layout is -
 ## 2025-07-30
 ### Dotfiles
 - [x] Startup Copyq on each sway instance.
-- [ ] Use Mod+N, Mod+P, to, pop open copyq, and navigate up/down
+- [x] Use Mod+N, Mod+P, to, pop open copyq, and navigate up/down
   copying.
 #### Markdown
 - [x] Add started, paused and completed, yesterday, tommorow snippets to generate timestamp with those tags. (completed: 07:38 PM)

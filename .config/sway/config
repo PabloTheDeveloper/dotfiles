@@ -128,7 +128,8 @@ mode "resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+r mode "resize"
+
+bindsym $mod+Shift+r mode "resize"
 #
 # Utilities:
 #
@@ -258,4 +259,11 @@ input "type:keyboard" {
 }
 # starts up copyq on sway creation.
 exec copyq --start-server
+
+# bind three keys for copyq
+bindsym $mod+n exec copyq previous
+bindsym $mod+p exec copyq next
+bindsym $mod+r exec copyq remove
+
+
 

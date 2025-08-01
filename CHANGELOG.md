@@ -20,6 +20,7 @@ The layout is -
 # Changelog 2025Q3
 ## TODOs
 ### Misc
+- [ ] CopyQ doesn't copy with mod keys
 - [ ] Setup up Digma.
     - [ ] Install Bazecor
     - [ ] Import settings (from windows).
@@ -48,13 +49,12 @@ The layout is -
 - [ ] Test with a docker image.
 - [ ] Add shell script & alias which inserts some command to the
   end of both arch and snapdragon ubuntu setups.
+## 2025-08-01
+### Misc
+- [ ] Find Golang docs but as a markdown or txt file.
+- [ ] Setup Deepseek locally
 ## 2025-07-31
 ### Dotfiles
-- [x] Figure out why if I make a `.config/` change, it
-  doesn't get tracked even if I do git add * and even if the
-  `git config set advice.addIgnoredFile false` is set.
-  * This was because the I didn't add a /* to the
-    end.
 #### Nvim
 - [ ] Learn how to fold everything except selection.
     * Very useful for focusing on changes.
@@ -64,21 +64,31 @@ The layout is -
 - [ ] Create git message template for updating changelog
   file at end or start of day with latest or previous
   entries.
+### Module Publisher
+- [x] Created and somewhat ready for it to be functional.
 ### Init
 - [ ] Add shell script & alias which inserts some command to the
   end of both arch and snapdragon ubuntu setups.
 ### Quotes
-- [ ] Publish as a module.
+- [ ] Publish as a module. (started: 06:55) (completed: 07:12 PM) created a
+  module for it. It's a bit more complex than first thought.
 ### Go Github Sync
-- [ ] Have it push once it pulls changes
+- [x] Have it push once it pulls changes
     * The concern here is with merge conflicts.
     * I suppose I can remember when I'm using this.
 - [ ] Configure to use Go-To
 ## 2025-07-30
 ### Dotfiles
+- [x] Figure out why if I make a `.config/` change, it
+  doesn't get tracked even if I do git add * and even if the
+  `git config set advice.addIgnoredFile false` is set.
+  * This was because the I didn't add a /* to the
+    end.
 - [x] Startup Copyq on each sway instance.
-- [x] Use Mod+N, Mod+P, to, pop open copyq, and navigate up/down
-  copying.
+- [x] Use Mod+N, Mod+P, to, pop open copyq, and
+  navigate up/down copying.
+- [x] Make copyq dark (although can't seem to add to
+  repo :/ )
 #### Markdown
 - [x] Add started, paused and completed, yesterday, tommorow snippets to generate timestamp with those tags. (completed: 07:38 PM)
 - [x] Add alias `changelog` to startup a changelog instance.

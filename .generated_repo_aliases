@@ -1,22 +1,22 @@
-abbr --add flappy-bird 'cd /home/dev/repos/games/flappy-bird && ls && cat README.md && git pull'
+abbr --add FLAPPY_BIRD 'cd /home/dev/repos/games/flappy-bird && ls && cat README.md && git pull'
 export FLAPPY_BIRD="/home/dev/repos/games/flappy-bird"
-abbr --add go-github-sync 'cd /home/dev/repos/go/go-github-sync && ls && cat README.md && git pull'
+abbr --add GO_GITHUB_SYNC 'cd /home/dev/repos/go/go-github-sync && ls && cat README.md && git pull'
 export GO_GITHUB_SYNC="/home/dev/repos/go/go-github-sync"
-abbr --add go-to 'cd /home/dev/repos/go/go-to && ls && cat README.md && git pull'
+abbr --add GO_TO 'cd /home/dev/repos/go/go-to && ls && cat README.md && git pull'
 export GO_TO="/home/dev/repos/go/go-to"
-abbr --add golang-project-starter 'cd /home/dev/repos/go/golang-project-starter && ls && cat README.md && git pull'
+abbr --add GOLANG_PROJECT_STARTER 'cd /home/dev/repos/go/golang-project-starter && ls && cat README.md && git pull'
 export GOLANG_PROJECT_STARTER="/home/dev/repos/go/golang-project-starter"
-abbr --add init 'cd /home/dev/repos/init && ls && cat README.md && git pull'
+abbr --add INIT 'cd /home/dev/repos/init && ls && cat README.md && git pull'
 export INIT="/home/dev/repos/init"
-abbr --add ivep 'cd /home/dev/repos/ivep && ls && cat README.md && git pull'
+abbr --add IVEP 'cd /home/dev/repos/ivep && ls && cat README.md && git pull'
 export IVEP="/home/dev/repos/ivep"
-abbr --add markdown-parser 'cd /home/dev/repos/go/markdown-parser && ls && cat README.md && git pull'
+abbr --add MARKDOWN_PARSER 'cd /home/dev/repos/go/markdown-parser && ls && cat README.md && git pull'
 export MARKDOWN_PARSER="/home/dev/repos/go/markdown-parser"
-abbr --add pablothedeveloper.github.io 'cd /home/dev/repos/sites/pablothedeveloper.github.io && ls && cat README.md && git pull'
+abbr --add PABLOTHEDEVELOPER_GITHUB_IO 'cd /home/dev/repos/sites/pablothedeveloper.github.io && ls && cat README.md && git pull'
 export PABLOTHEDEVELOPER_GITHUB_IO="/home/dev/repos/sites/pablothedeveloper.github.io"
-abbr --add personal-site 'cd /home/dev/repos/sites/personal-site && ls && cat README.md && git pull'
+abbr --add PERSONAL_SITE 'cd /home/dev/repos/sites/personal-site && ls && cat README.md && git pull'
 export PERSONAL_SITE="/home/dev/repos/sites/personal-site"
-abbr --add quotes 'cd /home/dev/repos/go/quotes && ls && cat README.md && git pull'
+abbr --add QUOTES 'cd /home/dev/repos/go/quotes && ls && cat README.md && git pull'
 export QUOTES="/home/dev/repos/go/quotes"
-abbr --add terminal-to-web 'cd /home/dev/repos/go/terminal-to-web && ls && cat README.md && git pull'
+abbr --add TERMINAL_TO_WEB 'cd /home/dev/repos/go/terminal-to-web && ls && cat README.md && git pull'
 export TERMINAL_TO_WEB="/home/dev/repos/go/terminal-to-web"

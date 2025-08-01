@@ -85,3 +85,7 @@ alias pictures="cd $PICTURES"
 # Exported variables
 export NVIM="/home/dev/.config/nvim"
 export NVIM_INIT="/home/dev/.config/nvim/init.lua"
+
+# Exporting GOPATH
+# This allows me to use go install to use packages on my machines.
+export GOPATH=$HOME/go

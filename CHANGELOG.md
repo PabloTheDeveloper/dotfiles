@@ -60,7 +60,7 @@ The layout is -
 - [ ] Find Way to Check changes not yet pushed.
 ### Dotfiles
 - [x] Fix .gitignore files
-- [ ] Refractor Sway files.
+- [x] Refractor Sway files.
 - [ ] Remap keys for Sway, to use vim bindings. (started: 11:01 AM)
 #### Nvim
 - [ ] allow window resize with mouse

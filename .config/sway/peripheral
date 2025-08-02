@@ -1,0 +1,23 @@
+# TODO: make touchpad more sensitive
+bindswitch --reload lid:on exec 'systemctl poweroff'
+input type:touchpad {
+				dwt enable # disables while tapping
+				tap enabled # allows taps for clicks
+				natural_scroll enabled
+				middle_emulation enabled
+}
+# Drag floating windows by holding down $mod and left mouse button.
+# Resize them with right mouse button + $mod.
+# Despite the name, also works for non-floating windows.
+# Change normal to inverse to use left mouse button for resizing and right
+# mouse button for dragging.
+floating_modifier $mod normal
+focus_follows_mouse no
+input "type:keyboard" {
+    xkb_layout us
+    xkb_options caps:escape
+}
+input "type:keyboard" {
+ 	 repeat_delay 150
+	 repeat_rate 150
+}

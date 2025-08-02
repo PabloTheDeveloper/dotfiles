@@ -1,0 +1,34 @@
+##########################################################################
+# Appearance
+# Useful editor: https://thomashunter.name/i3-configurator/
+##########################################################################
+# Background Wallpaper
+output * bg #000000 solid_color
+# Font
+font pango:Monospace 14px
+# Status Bar
+bar {
+	position bottom
+	status_command i3blocks
+	colors {
+		background #000000
+		statusline #FFFFFF
+		separator  #666666
+
+		focused_workspace  #000000 #251210 #FFFFFF
+		active_workspace   #333333 #000000 #FFFFFF
+		inactive_workspace #333333 #000000 #888888
+		urgent_workspace   #2F343A #900000 #FFFFFF
+		binding_mode       #2F343A #900000 #FFFFFF
+  }
+}
+# class                 border  bground text    indicator child_border
+client.focused          #000000 #251210 #FFFFFF #251210   #333333
+client.focused_inactive #000000 #000000 #FFFFFF #484E50   #333333
+client.unfocused        #000000 #000000 #888888 #292D2E   #333333
+client.urgent           #2F343A #900000 #FFFFFF #900000   #900000
+client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #000000
+client.background       #FFFFFF
+# turns off auto mouse focus
+# Removes border
+default_border pixel 1

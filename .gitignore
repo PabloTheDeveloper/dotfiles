@@ -1,7 +1,11 @@
-# Ignore everything in repository root 
-/*
-
-# Base files to not ignore
+##########################################################################
+# Ignore
+##########################################################################
+# Everything
+*
+##########################################################################
+# Exceptions
+##########################################################################
 !/.gitignore
 !/README.md
 !/README_NEXT_STAGE.md
@@ -12,8 +16,31 @@
 !/.generated_repo_aliases
 !/.generated_repo_list.json
 !/.markdownlint.json
-
-# contains most configs (see .gitignore for what should be included)
-!.config/*
 # Where all the desktop files are.
 !.local/share/applications
+# places my directories in specific places
+!/.config/user-dirs.dirs
+# use dark theme when possible
+!/.config/settings.ini
+# Unignore directory
+.config/*
+!.config/
+!/.config/foot/
+!/.config/nvim/
+!/.config/kanshi/
+!/.config/sway/
+!/.config/systemd/
+!/.config/i3blocks/
+!/.config/wofi/
+!/.config/fish/
+!/.config/copyq/
+# Unignore directory contents
+!/.config/foot/**
+!/.config/nvim/**
+!/.config/kanshi/**
+!/.config/sway/**
+!/.config/systemd/**
+!/.config/i3blocks/**
+!/.config/wofi/**
+!/.config/fish/**
+!/.config/copyq/**

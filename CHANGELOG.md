@@ -52,14 +52,24 @@ The layout is -
   end of both arch and snapdragon ubuntu setups.
 ## 2025-08-02
 ### Misc
-- [ ] Remap keys for Sway, to use vim bindings.
 - [ ] Find Golang docs but as a markdown or txt file.
 - [ ] Setup Docker.
 - [ ] Setup Deepseek locally.
+- [ ] Setup search across all commits in a repo.
+### Go Github Sync
+- [ ] Find Way to Check changes not yet pushed.
 ### Dotfiles
+- [x] Fix .gitignore files
+- [ ] Refractor Sway files.
+- [ ] Remap keys for Sway, to use vim bindings. (started: 11:01 AM)
 #### Nvim
+- [ ] allow window resize with mouse
+- [ ] Learn how to paste into current line? (select with visual selection and paste?)
+- [ ] Show registers always in some window
+- [ ] sync registers w/ copyq
 - [ ] Learn how to fold everything except selection.
     * Very useful for focusing on changes.
+- [ ] Learn how to 
 - [ ] Go through lua tutorial in nvim.
 #### Markdown
 - [ ] Prevent empty lines in markdown files.

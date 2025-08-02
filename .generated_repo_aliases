@@ -12,6 +12,8 @@ abbr --add IVEP 'cd /home/dev/repos/ivep && ls && cat README.md && git pull'
 export IVEP="/home/dev/repos/ivep"
 abbr --add MARKDOWN_PARSER 'cd /home/dev/repos/go/markdown-parser && ls && cat README.md && git pull'
 export MARKDOWN_PARSER="/home/dev/repos/go/markdown-parser"
+abbr --add MODULE_PUBLISHER 'cd /home/dev/repos/go/module-publisher && ls && cat README.md && git pull'
+export MODULE_PUBLISHER="/home/dev/repos/go/module-publisher"
 abbr --add PABLOTHEDEVELOPER_GITHUB_IO 'cd /home/dev/repos/sites/pablothedeveloper.github.io && ls && cat README.md && git pull'
 export PABLOTHEDEVELOPER_GITHUB_IO="/home/dev/repos/sites/pablothedeveloper.github.io"
 abbr --add PERSONAL_SITE 'cd /home/dev/repos/sites/personal-site && ls && cat README.md && git pull'

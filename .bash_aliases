@@ -87,5 +87,17 @@ export NVIM="/home/dev/.config/nvim"
 export NVIM_INIT="/home/dev/.config/nvim/init.lua"
 
 # Exporting GOPATH
-# This allows me to use go install to use packages on my machines.
-export GOPATH=$HOME/go
+# Installed modules go here.
+export GOPATH="$HOME/go"
+# Allows me to use golang packages.
+export PATH="$HOME/go/bin:$PATH"
+
+# opens godoc
+alias godoc="godoc -http :8080"
+
+# Wifi
+alias wifi-off="nmcli radio wifi off"
+alias wifi-on="nmcli radio wifi on"
+
+# Lynx in vim mode
+alias lynx="lynx -vikeys"

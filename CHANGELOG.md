@@ -28,6 +28,8 @@ The layout is -
 ### Dotfiles
 - [ ] Add git diff gutter
 - [ ] Add git merging
+#### Fish
+- [ ] Create a custom greeting in fish\_greeting.fish
 #### Sway
 - [ ] Update standard bindings to navigate 
 #### Tmux
@@ -52,7 +54,7 @@ The layout is -
   end of both arch and snapdragon ubuntu setups.
 ## 2025-08-02
 ### Misc
-- [ ] Find Golang docs but as a markdown or txt file.
+- [x] Find Golang docs but as a markdown or txt file. (not exactly doable but can run localserver and access w/ lynx).
 - [ ] Setup Docker.
 - [ ] Setup Deepseek locally.
 - [ ] Setup search across all commits in a repo.
@@ -70,7 +72,6 @@ The layout is -
 - [x] Added func to clear named registers ":WipeReg"
 - [ ] Learn how to fold everything except selection.
     * Very useful for focusing on changes.
-- [ ] Learn how to 
 - [ ] Go through lua tutorial in nvim.
 #### Markdown
 - [ ] Prevent empty lines in markdown files.

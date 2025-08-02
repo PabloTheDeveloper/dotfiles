@@ -63,10 +63,11 @@ The layout is -
 - [x] Refractor Sway files.
 - [ ] Remap keys for Sway, to use vim bindings. (started: 11:01 AM)
 #### Nvim
-- [ ] allow window resize with mouse
-- [ ] Learn how to paste into current line? (select with visual selection and paste?)
-- [ ] Show registers always in some window
-- [ ] sync registers w/ copyq
+- [x] allow window resize with mouse.
+- [x] Learn how to paste into current line? (select with visual selection and paste is
+  easiest.)
+- [x] Show registers always in some window (gennaro-tedesco/nvim-peekup)
+- [x] Added func to clear named registers ":WipeReg"
 - [ ] Learn how to fold everything except selection.
     * Very useful for focusing on changes.
 - [ ] Learn how to 

@@ -41,6 +41,7 @@ The layout is -
 ### Go Github Sync
 - [ ] Setup testing infrastructure.
 - [ ] Test with a docker image.
+- [ ] Configure to use Go-To
 ### Go To
 - [ ] Make go-to a module to import
 - [ ] Make it be called upon using the aliases generated
@@ -49,11 +50,12 @@ The layout is -
 - [ ] Test with a docker image.
 - [ ] Add shell script & alias which inserts some command to the
   end of both arch and snapdragon ubuntu setups.
-## 2025-08-01
+## 2025-08-02
 ### Misc
+- [ ] Remap keys for Sway, to use vim bindings.
 - [ ] Find Golang docs but as a markdown or txt file.
-- [ ] Setup Deepseek locally
-## 2025-07-31
+- [ ] Setup Docker.
+- [ ] Setup Deepseek locally.
 ### Dotfiles
 #### Nvim
 - [ ] Learn how to fold everything except selection.
@@ -64,19 +66,24 @@ The layout is -
 - [ ] Create git message template for updating changelog
   file at end or start of day with latest or previous
   entries.
+## 2025-08-01
+- Didn't do much today other than push changes and
+  fix the module-publisher a bit.
+* I think, also to change the aliases to use all
+  caps?
+## 2025-07-31
 ### Module Publisher
 - [x] Created and somewhat ready for it to be functional.
 ### Init
 - [ ] Add shell script & alias which inserts some command to the
   end of both arch and snapdragon ubuntu setups.
 ### Quotes
-- [ ] Publish as a module. (started: 06:55) (completed: 07:12 PM) created a
+- [x] Publish as a module. (started: 06:55) (completed: 07:12 PM) created a
   module for it. It's a bit more complex than first thought.
 ### Go Github Sync
 - [x] Have it push once it pulls changes
     * The concern here is with merge conflicts.
     * I suppose I can remember when I'm using this.
-- [ ] Configure to use Go-To
 ## 2025-07-30
 ### Dotfiles
 - [x] Figure out why if I make a `.config/` change, it

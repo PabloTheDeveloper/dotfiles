@@ -25,6 +25,8 @@ alias gd='git diff'
 alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push'
+alias gre='git restore'
+alias grm='git rm'
 alias gpull='git pull'
 # Wifi
 alias wifi-off="nmcli radio wifi off"

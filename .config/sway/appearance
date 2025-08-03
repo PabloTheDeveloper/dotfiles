@@ -1,7 +1,7 @@
-##########################################################################
+###########################################################
 # Appearance
 # Useful editor: https://thomashunter.name/i3-configurator/
-##########################################################################
+###########################################################
 # Background Wallpaper
 output * bg #000000 solid_color
 # Font
@@ -31,4 +31,6 @@ client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #000000
 client.background       #FFFFFF
 # turns off auto mouse focus
 # Removes border
-default_border pixel 1
+default_border pixel 0
+# Hides borders if border next to screen border
+hide_edge_borders smart

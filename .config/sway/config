@@ -1,6 +1,6 @@
-##########################################################################
+###########################################################
 # Configs
-##########################################################################
+###########################################################
 include ~/.config/sway/bindings
 include ~/.config/sway/appearance
 include ~/.config/sway/peripheral
@@ -9,9 +9,9 @@ include /etc/sway/config.d/*
 # TODO: Am I using this?
 # There's a arch linux article on using systemd to startup related services with sway. This is to do that for my .config/systemd/user/kanshi.service
 exec_always systemctl --user start sway-session.target
-##########################################################################
+###########################################################
 # Startup
-##########################################################################
+###########################################################
 # Clipboard
 exec copyq --start-server
 # displays off after 60m, Locks in 90m,

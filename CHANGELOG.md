@@ -25,22 +25,31 @@ The layout is -
     - [ ] Install Bazecor
     - [ ] Import settings (from windows).
 - [ ] Setup dygma on linux (arm linux version won't work)
+- [ ] Setup Docker.
+- [ ] Setup Deepseek locally.
+- [ ] Setup search across all commits in a repo.
+- [ ] Auto hit enter on certain aliases.
 ### Dotfiles
 - [ ] Add git diff gutter
 - [ ] Add git merging
 #### Fish
 - [ ] Create a custom greeting in fish\_greeting.fish
-#### Sway
-- [ ] Update standard bindings to navigate 
 #### Tmux
 - [ ] Setup standard bindings to navigate 
 #### Nvim
+- [ ] Learn how to fold everything except selection.
+    * Very useful for focusing on changes.
 - [ ] Go through lua tutorial in nvim.
 - [ ] Update snippets to query counts like,
   no sweets, walked, hours, morning sun
   slept, etc
-- [ ] Setup standarized bindings to navigate
+#### Markdown
+- [ ] Create git message template for updating changelog
+  file at end or start of day with latest or previous
+  entries.
+- [ ] Prevent empty lines in markdown files.
 ### Go Github Sync
+- [ ] Find Way to Check changes not yet pushed.
 - [ ] Setup testing infrastructure.
 - [ ] Test with a docker image.
 - [ ] Configure to use Go-To
@@ -52,32 +61,30 @@ The layout is -
 - [ ] Test with a docker image.
 - [ ] Add shell script & alias which inserts some command to the
   end of both arch and snapdragon ubuntu setups.
+
+## 2025-08-03
+### Dotfiles
+#### Sway
+- [x] Update standard bindings to navigate 
+- [x] Refractor Sway files.
+- [x] Refractor Sway files for vim.
+#### Foot
+- [ ] Refractor to use Ctrl+C for copying (use Mod+w
+  to close wayward terminals)
+#### Nvim
+- [x] Use tablet.
+- [x] Refractor to use Google Chrome like-bindings
 ## 2025-08-02
 ### Misc
 - [x] Find Golang docs but as a markdown or txt file. (not exactly doable but can run localserver and access w/ lynx).
-- [ ] Setup Docker.
-- [ ] Setup Deepseek locally.
-- [ ] Setup search across all commits in a repo.
-### Go Github Sync
-- [ ] Find Way to Check changes not yet pushed.
 ### Dotfiles
 - [x] Fix .gitignore files
-- [x] Refractor Sway files.
-- [ ] Remap keys for Sway, to use vim bindings. (started: 11:01 AM)
 #### Nvim
 - [x] allow window resize with mouse.
 - [x] Learn how to paste into current line? (select with visual selection and paste is
   easiest.)
 - [x] Show registers always in some window (gennaro-tedesco/nvim-peekup)
 - [x] Added func to clear named registers ":WipeReg"
-- [ ] Learn how to fold everything except selection.
-    * Very useful for focusing on changes.
-- [ ] Go through lua tutorial in nvim.
-#### Markdown
-- [ ] Prevent empty lines in markdown files.
-- [ ] Create git message template for updating changelog
-  file at end or start of day with latest or previous
-  entries.
 ## 2025-08-01
 - Didn't do much today other than push changes and
   fix the module-publisher a bit.
@@ -86,9 +93,6 @@ The layout is -
 ## 2025-07-31
 ### Module Publisher
 - [x] Created and somewhat ready for it to be functional.
-### Init
-- [ ] Add shell script & alias which inserts some command to the
-  end of both arch and snapdragon ubuntu setups.
 ### Quotes
 - [x] Publish as a module. (started: 06:55) (completed: 07:12 PM) created a
   module for it. It's a bit more complex than first thought.

@@ -1,103 +1,61 @@
-alias a="v $HOME/.bash_aliases"
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-alias v="nvim"
-# Regarding notes.md project
-alias journal="v $HOME/journal/journal.md" # TODO: Update to be a cli which creates forms for me to select from - some journal entries should be structured.
-alias tasks="v $HOME/journal/tasks.md" #TODO: Similar to above. Have it accept cli tasks. Have it sync with tablet to use whatever's current image/drawing to be a task. Associate that drawing w/ that task.
-alias motivation="v $home/journal/motivation.md"
-alias growth="v $HOME/journal/growth.md" #TODO: create CLI which tracks main goals and aspirations. Look to the future for this.
-alias no="cd $HOME/repos/sites/personal-site/ && cat mkdocs.yml && cd docs && ls"
-alias noc="cd $HOME/repos/sites/personal-site/docs/coding && v changelog.md" #TODO: auto generate this and write it out at 6:30pm
-alias nor="cd $HOME/repos/sites/personal-site/docs/writings && v reflections.md"
-# adding configs
-alias c='cd $HOME/.config'
-alias cv='cd $HOME/.config/nvim'
-alias cvt='v $HOME/.config/nvim/templates'
-alias cvi='v $HOME/.config/nvim && v init.lua'
-alias cvp='v $HOME/.config/nvim/lua/plugins'
-alias cvs='v $HOME/.config/nvim/snippets/markdown.snippets'
-alias cs='v $HOME/.config/sway'
-alias ci='cd $HOME/.config/i3blocks && v config'
-alias cf='cd $HOME/.config/foot && v foot.ini'
-alias ck='cd $HOME/.config/kanshi && v config'
-alias cw='cd $HOME/.config/wofi && v config'
-alias cb='cd $HOME && v .bashrc'
-# Tune backlight #TODO/ make a function
-alias b="brightnessctl s"
-alias b0="brightnessctl s 1%"
-alias b1="brightnessctl s 10%"
-alias b1.5="brightnessctl s 15%"
-alias b2="brightnessctl s 20%"
-alias b2.5="brightnessctl s 25%"
-alias b3="brightnessctl s 30%"
-alias b3.5="brightnessctl s 35%"
-alias b4="brightnessctl s 40%"
-alias b4.5="brightnessctl s 45%"
-alias b5="brightnessctl s 50%"
-alias b5.5="brightnessctl s 55%"
-alias b6="brightnessctl s 60%"
-alias b6.5="brightnessctl s 65%"
-alias b7="brightnessctl s 70%"
-alias b7.5="brightnessctl s 75%"
-alias b8="brightnessctl s 80%"
-alias b8.5="brightnessctl s 85%"
-alias b9="brightnessctl s 90%"
-alias b9.5="brightnessctl s 95%"
-alias b10="brightnessctl s 100%"
-# wifi
-alias wl="nmcli device wifi list"
-alias wc="nmcli device wifi connect"
-alias ws="nmcli device status"
-alias won="sudo nmcli radio wifi on"
-alias woff="sudo nmcli radio wifi off"
-# sourcing files
-alias sb='source $HOME/.bashrc'
-# exit
-alias e='exit & exit'
-# standard stuff
+###########################################################
+# Environment Variables
+###########################################################
+export CONFIG="/home/dev/.config"
+export NVIM="$CONFIG/nvim"
+export SWAY="$CONFIG/sway"
+export FISH="$CONFIG/FISH"
+export GOPATH="$HOME/go"
+export PATH="$HOME/go/bin:$PATH"
+###########################################################
+# Commands
+###########################################################
+# Misc
+alias e='exit'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-# Standard project locations & Github shortcuts
-alias u='git pull'
-alias init='cd $HOME/repos/init && ls'
-
-# regarding github projects
-# Assumes many things... so make it
-# a binary at some point.
-alias pnew="$HOME/repos/go/golang-project-starter/golang-project-starter --tmpls_path $HOME/repos/go/golang-project-starter/templates --absl_path $HOME/repos/go" #TODO figure out how to install this as a binary and set it up.
-
-# Should be run at the start of any work session to sync and plan out future changes.
-alias project="cd $HOME/repos/go/go-github-sync && go run . && cd $HOME && v -O $HOME/CHANGELOG.md +Outline +OutlineFocusCode +\"tabnew\" +\"e $HOME/PROJECTS.md\" +Outline +OutlineFocusOutline"
-
-# To run if need to reset Markdown snippets.
-alias changelog="v -O $HOME/CHANGELOG.md +Outline +OutlineFocusOutline"
-
-# aliases for
-# default locations
+alias v="nvim"
+alias lynx="lynx -vikeys" # in vi mode.
+alias bat="batcat"
+alias godoc="godoc -http :8080"
+alias s='source $HOME/.bash_aliases && source $HOME/.generated_repo_aliases && source $CONFIG/fish/config.fish'
+# Git
+alias gs='git status'
+alias gd='git diff'
+alias ga='git add'
+alias gc='git commit -m'
+alias gp='git push'
+alias gpull='git pull'
+# Wifi
+alias wifi-off="nmcli radio wifi off"
+alias wifi-on="nmcli radio wifi on"
+alias wifi-list="nmcli device wifi list"
+alias wifi-connect="nmcli device wifi connect"
+alias wifi-status="nmcli device status"
+# Project Starter
+alias project-starter="$HOME/repos/go/golang-project-starter/golang-project-starter --tmpls_path $HOME/repos/go/golang-project-starter/templates --absl_path $HOME/repos/go"
+alias github-sync="cd $HOME/repos/go/go-github-sync && go run . && cd $HOME && v -O $HOME/CHANGELOG.md +Outline +OutlineFocusCode +\"tabnew\" +\"e $HOME/PROJECTS.md\" +Outline +OutlineFocusOutline"
+###########################################################
+# Folder Locations
+###########################################################
 alias downloads="cd $DOWNLOADS"
 alias documents="cd $DOCUMENTS"
 alias videos="cd $VIDEOS"
 alias music="cd $MUSIC"
 alias pictures="cd $PICTURES"
-
-# Exported variables
-export NVIM="/home/dev/.config/nvim"
-export NVIM_INIT="/home/dev/.config/nvim/init.lua"
-
-# Exporting GOPATH
-# Installed modules go here.
-export GOPATH="$HOME/go"
-# Allows me to use golang packages.
-export PATH="$HOME/go/bin:$PATH"
-
-# opens godoc
-alias godoc="godoc -http :8080"
-
-# Wifi
-alias wifi-off="nmcli radio wifi off"
-alias wifi-on="nmcli radio wifi on"
-
-# Lynx in vim mode
-alias lynx="lynx -vikeys"
+###########################################################
+# File Locations
+###########################################################
+alias ba="v $HOME/.bash_aliases"
+alias changelog="v -O $HOME/CHANGELOG.md +Outline +OutlineFocusOutline"
+# Config
+alias cs='cd $SWAY && v .'
+alias cv='cd $NVIM'
+alias cvs='cd $NVIM/snippets && v .'
+alias cvi='cd $NVIM && v init.lua'
+alias cvp='cd $NVIM/lua/plugins && v .'
+alias ck='cd $CONFIG/kanshi && v config'
+alias cf='cd $FISH && v config.fish'
+# Personal Site
+alias site="cd $HOME/repos/sites/personal-site/ && cat mkdocs.yml && cd docs && ls"
+alias reflections="cd $HOME/repos/sites/personal-site/docs/writings && v reflections.md"

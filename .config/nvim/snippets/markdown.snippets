@@ -34,66 +34,72 @@ snippet : Definition list
 snippet h1datetime
 	# ${1:title}
 
-	| Field         | Label           |
-	| ----------- | --------------- |
-	| **Date**    | `!lua os.date('%Y-%m-%d')` |
-	| **Time**		| `!lua os.date('%I:%M %p')` |
+	|			Field			|				Label				|
+	| --------------| ----------------- |
+	|	**Date**			|	`!lua os.date('%Y-%m-%d')`	|
+	|	**Time**			|	`!lua os.date('%I:%M %p')`	|
 
 	${2:body}
+
 
 snippet h2datetime
-	# ${1:title}
+	## ${1:title}
 
-	| Field         | Label           |
-	| ----------- | --------------- |
-	| **Date**    | `!lua os.date('%Y-%m-%d')` |
-	| **Time**		| `!lua os.date('%I:%M %p')` |
+	|			Field			|				Label				|
+	| --------------| ----------------- |
+	|	**Date**			|	`!lua os.date('%Y-%m-%d')`	|
+	|	**Time**			|	`!lua os.date('%I:%M %p')`	|
 
 	${2:body}
 
-snippet h1datetimespark
-	# ${1:title}
 
-	| Field         | Label           |
-	| ----------- | --------------- |
-	| **Date**    | `!lua os.date('%Y-%m-%d')` |
-	| **Time**		| `!lua os.date('%I:%M %p')` |
-	| **Spark**  | ${2:update} |
+snippet h3datetime
+	### ${1:title}
 
-	$3
+	|			Field			|				Label				|
+	| --------------| ----------------- |
+	|	**Date**			|	`!lua os.date('%Y-%m-%d')`	|
+	|	**Time**			|	`!lua os.date('%I:%M %p')`	|
 
-snippet h2datetimespark
-	## ${1:title}
+	${2:body}
 
-	| Field         | Label           |
-	| ----------- | --------------- |
-	| **Date**    | `!lua os.date('%Y-%m-%d')` |
-	| **Time**		| `!lua os.date('%I:%M %p')` |
-	| **Spark**  | ${2:update} |
-
-	$3
-
-snippet h1datelink
-	# ${1:title}
-
-	| Field         | Label           |
-	| ----------- | --------------- |
-	| **Date**    | `!lua os.date('%Y-%m-%d')` |
-	| **Time**		| `!lua os.date('%I:%M %p')` |
-	| **Link** | ${2:link}|
-
-	$3
 
 snippet h1datetimeupdate
 	# ${1:title}
 
-	| Field         | Label          |
-	| ----------- | --------------- |
-	| **Date**    | `!lua os.date('%Y-%m-%d')` |
-	| **Time**		| `!lua os.date('%I:%M %p')` |
-	| **Update**  | ${2:update} |
+	|			Field			|				Label				|
+	| --------------| ----------------- |
+	|	**Date**			|	`!lua os.date('%Y-%m-%d')`	|
+	|	**Time**			|	`!lua os.date('%I:%M %p')`	|
+	|	**Spark** 		|	${2:update}	|
 
 	$3
+
+
+snippet h2datetimeupdate
+	## ${1:title}
+
+	|			Field			|				Label				|
+	| --------------| ----------------- |
+	|	**Date**			|	`!lua os.date('%Y-%m-%d')`	|
+	|	**Time**			|	`!lua os.date('%I:%M %p')`	|
+	|	**Spark** 		|	${2:update}	|
+
+	$3
+
+
+snippet h1datelink
+	# ${1:title}
+
+	|			Field			|				Label				|
+	| --------------| ----------------- |
+	|	**Date**			|	`!lua os.date('%Y-%m-%d')`	|
+	|	**Time**			|	`!lua os.date('%I:%M %p')`	|
+	|	**Spark** 		|	${2:link}	|
+
+	$3
+
+
 snippet log
 	**Time**: ${3:hh:mm p}\
 	$4
@@ -131,7 +137,7 @@ snippet form
 	* What's one thing I can do different?
 		* $6
 
-	## Nutrition 
+	## Nutrition
 	
 	Reminders: No sweets, No takeout, late
 	night eating.
@@ -145,7 +151,7 @@ snippet form
 	* What's one thing I can do different?
 		* $9
 
-	## Personality 
+	## Personality
 
 	Reminders: Face difficult
 	things/conversations, be a fool and be
@@ -199,6 +205,7 @@ snippet li
 
 snippet check
 	- [ ] (`!lua os.date('%I:%M %p')`): $1
+
 snippet date
 	`!lua os.date('%Y-%m-%d')`
 
@@ -211,11 +218,11 @@ snippet yesterday
 snippet tomorrow 
 	`!lua os.date('%Y-%m-%d', os.time(os.date("*t"))+(24 * 60 * 60))`
 
-snippet started
+snippet start
 	(started: `!lua os.date('%I:%M %p')`)
 
-snippet paused
+snippet pause
 	(paused: `!lua os.date('%I:%M %p')`)
 
-snippet completed
+snippet end
 	(completed: `!lua os.date('%I:%M %p')`)

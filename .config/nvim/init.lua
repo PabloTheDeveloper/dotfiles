@@ -1,15 +1,14 @@
 -----------------------------------------------------------
 --- Base Settings
 -----------------------------------------------------------
-vim.opt.linebreak = true      -- Wraps punctuation.
-vim.opt.breakindent = true    -- Wrapped lines keep indent.
-vim.opt.showbreak = ">>>"     -- Special symbol(s) identifying wrapped lines
-vim.opt.number = true         -- Always show location of absolute line.
+vim.opt.linebreak = true      -- Wraps punctuation (only visual effect).
+vim.opt.breakindent = true    -- Visually indent breaks (>>>)
+vim.opt.textwidth = 80        -- Wraps text at 80 lines.
+vim.opt.showbreak = ">>>"     -- Wrapped line symbol.
+vim.opt.number = true         -- Absolute line location.
 vim.opt.relativenumber = true -- Shows relative numbers.
-vim.opt.paste = false         -- Text won't be inserted literally.
-vim.opt.wrapmargin = 2        -- Show existing tab with 2 spaces width
-vim.opt.tabstop = 2           -- When indenting with '>' use 2 spaces width
-vim.opt.shiftwidth = 2        --
+vim.opt.paste = false         -- Text inserted literally.
+vim.opt.tabstop = 2           -- # of spaces for Tab.
 vim.opt.list = true           -- Shows blankspace.
 vim.opt.termguicolors = true  -- github.com/fenetikm/falcon/wiki/Installation
 vim.opt.mouse = "a"           -- allows mouse to control window resize

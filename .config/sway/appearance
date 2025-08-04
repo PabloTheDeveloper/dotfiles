@@ -29,8 +29,5 @@ client.unfocused        #000000 #000000 #888888 #292D2E   #333333
 client.urgent           #2F343A #900000 #FFFFFF #900000   #900000
 client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #000000
 client.background       #FFFFFF
-# turns off auto mouse focus
-# Removes border
-default_border pixel 0
-# Hides borders if border next to screen border
+# Hides borders if border only next to screen.
 hide_edge_borders smart

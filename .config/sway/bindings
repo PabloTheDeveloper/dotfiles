@@ -60,8 +60,8 @@ bindsym $mod+Shift+b scratchpad show
 # Resize
 bindsym $mod+plus resize grow height 10px
 bindsym $mod+underscore resize shrink height 10px
-# bindsym $mod=< resize shrink width 10px
-# bindsym $mod+> resize grow width 10px
+bindsym $mod+shift+comma resize shrink width 10px
+bindsym $mod+shift+period resize grow width 10px
 ###########################################################
 #Application Bindings
 ###########################################################

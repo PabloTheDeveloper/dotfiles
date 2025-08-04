@@ -17,6 +17,6 @@ exec copyq --start-server
 # displays off after 60m, Locks in 90m,
 exec swayidle -w  timeout 4800 'swaylock -f -c 000000' timeout 3600 'systemctl poweroff'
 # Sunset
-exec_always wlsunset -l 42 -L -71 -t 1000
+exec_always wlsunset -S "06:00" -s "17:30" -t 2500
 # Display
 exec_always exec kanshi

@@ -6,6 +6,8 @@ export NVIM="$CONFIG/nvim"
 export SWAY="$CONFIG/sway"
 export FISH="$CONFIG/FISH"
 export GOPATH="$HOME/go"
+export BA="$HOME/.bash_aliases"
+export GI="$HOME/.gitignore"
 export PATH="$HOME/go/bin:$PATH"
 ###########################################################
 # Commands
@@ -49,7 +51,9 @@ alias pictures="cd $PICTURES"
 # File Locations
 ###########################################################
 alias ba="v $HOME/.bash_aliases"
+alias gi="v $HOME/.gitignore"
 alias changelog="v -O $HOME/CHANGELOG.md +Outline +OutlineFocusOutline"
+alias journal="v -O $HOME/journal/journal.md +Outline +OutlineFocusOutline"
 # Config
 alias cs='cd $SWAY && v .'
 alias cv='cd $NVIM'

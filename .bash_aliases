@@ -54,6 +54,7 @@ alias ba="v $HOME/.bash_aliases"
 alias gi="v $HOME/.gitignore"
 alias changelog="v -O $HOME/CHANGELOG.md +Outline +OutlineFocusOutline"
 alias journal="v -O $HOME/journal/journal.md +Outline +OutlineFocusOutline"
+alias tasks="v -O $HOME/journal/tasks.md +Outline +OutlineFocusOutline"
 # Config
 alias cs='cd $SWAY && v .'
 alias cv='cd $NVIM'

@@ -10,7 +10,6 @@ vim.opt.relativenumber = true -- Shows relative numbers.
 vim.opt.paste = false         -- Text inserted literally.
 vim.opt.tabstop = 2           -- # of spaces for Tab.
 vim.opt.list = true           -- Shows blankspace.
-vim.opt.termguicolors = true  -- github.com/fenetikm/falcon/wiki/Installation
 vim.opt.mouse = "a"           -- allows mouse to control window resize
 vim.opt.splitbelow = true
 vim.opt.splitright = true
@@ -84,3 +83,4 @@ end
 --- Configures Lazy Plugin Manager
 -----------------------------------------------------------
 require("config.lazy")
+vim.cmd("colorscheme carbonfox")

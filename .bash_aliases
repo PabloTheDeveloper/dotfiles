@@ -1,7 +1,7 @@
 ###########################################################
 # Environment Variables
 ###########################################################
-export CONFIG="/home/dev/.config"
+export CONFIG="$HOME/.config"
 export NVIM="$CONFIG/nvim"
 export SWAY="$CONFIG/sway"
 export FISH="$CONFIG/FISH"
@@ -9,6 +9,8 @@ export GOPATH="$HOME/go"
 export BA="$HOME/.bash_aliases"
 export GI="$HOME/.gitignore"
 export PATH="$HOME/go/bin:$PATH"
+export JOURNAL="$HOME/journal/journal.md"
+export TASKS="$HOME/journal/tasks.md"
 ###########################################################
 # Commands
 ###########################################################

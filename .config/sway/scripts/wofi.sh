@@ -10,5 +10,5 @@
 #XDG_DATA_HOME="/dev/null"
 #XDG_CACHE_HOME="/dev/null"
 
-/usr/bin/wofi --show drun --color /home/dev/.config/wofi/colors --cache /home/dev/.config/wofi/wofi-drun-cache
+/usr/bin/wofi --show drun --color $HOME/.config/wofi/colors --cache $HOME/.config/wofi/wofi-drun-cache
 

@@ -2,9 +2,11 @@
 # Environment Variables
 ###########################################################
 export CONFIG="$HOME/.config"
+export LOCAL="$HOME/.local"
+export SHARE="$LOCAL/share"
 export NVIM="$CONFIG/nvim"
 export SWAY="$CONFIG/sway"
-export FISH="$CONFIG/FISH"
+export FISH="$CONFIG/fish"
 export GOPATH="$HOME/go"
 export BA="$HOME/.bash_aliases"
 export GI="$HOME/.gitignore"
@@ -41,6 +43,9 @@ alias wifi-status="nmcli device status"
 # Project Starter
 alias project-starter="$HOME/repos/go/golang-project-starter/golang-project-starter --tmpls_path $HOME/repos/go/golang-project-starter/templates --absl_path $HOME/repos/go"
 alias github-sync="cd $HOME/repos/go/go-github-sync && go run . && cd $HOME && v -O $HOME/CHANGELOG.md +Outline +OutlineFocusCode +\"tabnew\" +\"e $HOME/PROJECTS.md\" +Outline +OutlineFocusOutline"
+# To Retire
+alias cd="echo \"Don't use this!\""
+alias exit="echo \"Don't use this!\""
 ###########################################################
 # Folder Locations
 ###########################################################

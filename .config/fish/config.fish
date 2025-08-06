@@ -26,6 +26,9 @@ source ~/.bash_aliases
 # import generated aliases
 source ~/.generated_repo_aliases
 
+# import styles
+source $SHARE/nvim/lazy/nightfox.nvim/extra/carbonfox/carbonfox.fish
+
 # Created by `pipx` on 2025-07-06 12:58:54
 export PATH="$PATH:/home/dev/.local/bin"
 
@@ -41,3 +44,4 @@ export DOCUMENTS="$HOME/files/documents"
 export MUSIC="$HOME/files/music"
 export PICTURES="$HOME/files/pictures"
 export VIDEOS="$HOME/files/videos"
+

@@ -61,7 +61,13 @@ The layout is -
 - [ ] Test with a docker image.
 - [ ] Add shell script & alias which inserts some command to the
   end of both arch and snapdragon ubuntu setups.
-
+## 2025-08-06
+### Golang Project Starter
+- [ ] Rename to Go Project Starter
+- [ ] Use functions to wrap functionality
+### Quotes
+- [ ] Create new project for running greetings.
+- [ ] Learn about multi package projects maybe?
 ## 2025-08-03
 ### Dotfiles
 #### Sway

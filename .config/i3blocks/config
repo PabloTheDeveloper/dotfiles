@@ -53,7 +53,7 @@ LABEL=Wifi:
 
 # Date Time
 [time]
-command=date '+%Y-%m-%d'
+command=date '+D:%d'
 interval=18000 #= 5 * (3600 seconds = 60*60 seconds = 1 hr) = 5 hrs
 
 [time]

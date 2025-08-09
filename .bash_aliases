@@ -17,6 +17,9 @@ export TASKS="$HOME/journal/tasks.md"
 # Commands
 ###########################################################
 # Misc
+# TODO(pablothedeveloper): Make functions.
+alias l='eza --header --long --no-permissions --no-user --binary --time "modified" --time-style "+%m/%d|%H:%M%p" --git --tree --level 2 --group-directories-first --total-size --sort modified --reverse --hyperlink --icons --color "always"'
+alias ll='eza --header --long --no-permissions --no-user --binary --time "modified" --time-style "+%m/%d|%H:%M%p" --git --tree --level 2 --group-directories-first --total-size --sort modified --reverse --hyperlink --icons --color "always" | batcat'
 alias e='exit'
 #alias exit="echo \"Don't use this!\""
 alias ls='ls --color=auto'
@@ -43,33 +46,25 @@ alias wifi-connect="nmcli device wifi connect"
 alias wifi-status="nmcli device status"
 # Project Starter
 alias project-starter="$HOME/repos/go/golang-project-starter/golang-project-starter --tmpls_path $HOME/repos/go/golang-project-starter/templates --absl_path $HOME/repos/go"
-alias github-sync="cd $HOME/repos/go/go-github-sync && go run . && cd $HOME && v -O $HOME/CHANGELOG.md +Outline +OutlineFocusCode +\"tabnew\" +\"e $HOME/PROJECTS.md\" +Outline +OutlineFocusOutline"
-# To Retire
-alias cd="echo \"Don't use this!\""
+alias github-sync="$HOME/repos/go/go-github-sync && go run . && $HOME && v -O $HOME/CHANGELOG.md +Outline +OutlineFocusCode +\"tabnew\" +\"e $HOME/PROJECTS.md\" +Outline +OutlineFocusOutline"
 ###########################################################
-# Folder Locations
+# Frequently Edited Files
 ###########################################################
-alias downloads="cd $DOWNLOADS"
-alias documents="cd $DOCUMENTS"
-alias videos="cd $VIDEOS"
-alias music="cd $MUSIC"
-alias pictures="cd $PICTURES"
-###########################################################
-# File Locations
-###########################################################
-alias ba="v $HOME/.bash_aliases"
-alias gi="v $HOME/.gitignore"
+# Planning
 alias changelog="v -O $HOME/CHANGELOG.md +Outline +OutlineFocusOutline"
 alias journal="v -O $HOME/journal/journal.md +Outline +OutlineFocusOutline"
 alias tasks="v -O $HOME/journal/tasks.md +Outline +OutlineFocusOutline"
 # Config
-alias cs='cd $SWAY && v .'
-alias cv='cd $NVIM'
-alias cvs='cd $NVIM/snippets && v .'
-alias cvi='cd $NVIM && v init.lua'
-alias cvp='cd $NVIM/lua/plugins && v .'
-alias ck='cd $CONFIG/kanshi && v config'
-alias cf='cd $FISH && v config.fish'
+alias ba="v $HOME/.bash_aliases"
+alias gi="v $HOME/.gitignore"
+alias cs='$SWAY && v .'
+alias cv='$NVIM && v .'
+alias cvs='$NVIM/snippets && v .'
+alias cvi='$NVIM && v init.lua'
+alias cvp='$NVIM/lua/plugins && v .'
+alias ck='$CONFIG/kanshi && v config'
+alias cf='$FISH && v config.fish'
 # Personal Site
-alias site="cd $HOME/repos/sites/personal-site/ && cat mkdocs.yml && cd docs && ls"
-alias reflections="cd $HOME/repos/sites/personal-site/docs/writings && v reflections.md"
+alias site="$HOME/repos/sites/personal-site/docs && v ."
+alias reflect="$HOME/repos/sites/personal-site/docs/writings && v reflections.md"
+

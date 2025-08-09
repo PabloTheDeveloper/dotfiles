@@ -2,7 +2,7 @@
 # Modifier/Variable Bindings
 ###########################################################
 set $mod Mod4
-set $term foot
+set $term kitty
 # Move your focus around
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -88,8 +88,7 @@ bindsym --locked XF86MonBrightnessUp exec brightnessctl set 1%+
 # Screenshot
 bindsym Print exec grim
 # Clipboard
-bindsym $mod+v exec copyq previous
-bindsym $mod+Shift+v exec copyq next
+bindsym $mod+v exec copyq menu 
 # App Startup
 bindsym $mod+Ctrl+t exec 'foot v journal/tasks.md'
 bindsym $mod+Ctrl+j exec 'foot v journal/journal.md'

@@ -18,6 +18,7 @@ export TASKS="$HOME/journal/tasks.md"
 ###########################################################
 # Misc
 alias e='exit'
+#alias exit="echo \"Don't use this!\""
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias v="nvim"
@@ -45,7 +46,6 @@ alias project-starter="$HOME/repos/go/golang-project-starter/golang-project-star
 alias github-sync="cd $HOME/repos/go/go-github-sync && go run . && cd $HOME && v -O $HOME/CHANGELOG.md +Outline +OutlineFocusCode +\"tabnew\" +\"e $HOME/PROJECTS.md\" +Outline +OutlineFocusOutline"
 # To Retire
 alias cd="echo \"Don't use this!\""
-alias exit="echo \"Don't use this!\""
 ###########################################################
 # Folder Locations
 ###########################################################

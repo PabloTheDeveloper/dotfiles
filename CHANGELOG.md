@@ -61,6 +61,19 @@ The layout is -
 - [ ] Test with a docker image.
 - [ ] Add shell script & alias which inserts some command to the
   end of both arch and snapdragon ubuntu setups.
+## 2025-08-10
+- [ ] Try out mod+c and mod+v (do on home computer)
+## 2025-08-09
+### Dotfiles
+- [x] Setup vertical git diff (heck ya!)
+- [x] Don't use cd -> use paths instead (removed cd in .bash_aliases)
+- [x] Update to use l for eza
+- [x] Update to use ll for eza (with batcat)
+    - [x] Keep colors into batcat
+- [x] Use carbonfox on batcat.
+- [x] Remap copyq to use arrow keys to navigate tray.
+- [x] Update to use kitty instead of foot.
+* install list: batcat, git-delta, less
 ## 2025-08-06
 ### Golang Project Starter
 - [ ] Rename to Go Project Starter

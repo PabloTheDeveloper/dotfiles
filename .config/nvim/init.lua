@@ -18,8 +18,9 @@ vim.opt.relativenumber = true -- Shows relative numbers.
 vim.opt.mouse = "a"           -- allows mouse to control window resize.
 vim.opt.splitbelow = true
 vim.opt.splitright = true
---- Clipboard
-vim.opt.paste = false -- Paste text literally.
+--- Clipboard (need wl-clipboard)
+vim.opt.clipboard = "unnamedplus" -- Sync "+ to clipboard
+vim.opt.paste = false             -- Paste text literally.
 -----------------------------------------------------------
 --- Remappings
 -----------------------------------------------------------

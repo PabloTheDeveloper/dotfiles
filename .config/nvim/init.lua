@@ -1,18 +1,25 @@
 -----------------------------------------------------------
 --- Base Settings
 -----------------------------------------------------------
-vim.opt.linebreak = true      -- Wraps punctuation (only visual effect).
-vim.opt.breakindent = true    -- Visually indent breaks (>>>)
+--- Wrapping
 vim.opt.textwidth = 80        -- Wraps text at 80 lines.
+vim.opt.linebreak = true      -- Wraps punctuation (only visual effect).
+vim.opt.list = true           -- Shows blankspace.
+vim.opt.breakindent = true    -- Visually indent breaks (>>>)
 vim.opt.showbreak = ">>>"     -- Wrapped line symbol.
+--- Spacing
+vim.opt.shiftwidth = 2        -- >> and << commands width.
+vim.opt.expandtab = false     -- Don't expand tabs to spaces.
+vim.opt.tabstop = 2           -- How many spaces a tab counts for.
+--- Lines
 vim.opt.number = true         -- Absolute line location.
 vim.opt.relativenumber = true -- Shows relative numbers.
-vim.opt.paste = false         -- Text inserted literally.
-vim.opt.tabstop = 2           -- # of spaces for Tab.
-vim.opt.list = true           -- Shows blankspace.
-vim.opt.mouse = "a"           -- allows mouse to control window resize
+--- Window
+vim.opt.mouse = "a"           -- allows mouse to control window resize.
 vim.opt.splitbelow = true
 vim.opt.splitright = true
+--- Clipboard
+vim.opt.paste = false -- Paste text literally.
 -----------------------------------------------------------
 --- Remappings
 -----------------------------------------------------------
@@ -60,9 +67,9 @@ vim.api.nvim_create_user_command(
 		end
 	end,
 	{})
--- Reload Nvim init.lua file
+-- source Nvim init.lua file
 vim.api.nvim_create_user_command(
-	'Reload',
+	'Source',
 	function()
 		vim.cmd("luafile $NVIM/init.lua")
 	end,

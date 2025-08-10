@@ -22,6 +22,8 @@
 !/.config/user-dirs.dirs
 # use dark theme when possible
 !/.config/settings.ini
+# Scripts
+scripts/*
 # Unignore directory
 .config/*
 !.config/

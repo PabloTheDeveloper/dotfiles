@@ -1,13 +1,16 @@
 # wdisplays
 # swaymsg -t get_outputs
-profile home-odyssey-55-in-monitor {
+###########################################################
+# Laptop w/ Monitor
+###########################################################
+profile laptop-and-odyssey-55-in-monitor {
 				# lenovo built in display
 				output eDP-1 disable
 				# 55 Inch Home Monitor
 				output "Samsung Electric Company Odyssey Ark H1AK500000" position 1920,0 mode 3840x2160@60Hz scale 2.0
 }
 
-profile office-32-in-monitor {
+profile laptop-and-32-in-monitor {
 				output eDP-1 disable
 				output "Lenovo Group Limited LEN T32p-20 VNA70T7D" position 2713,0 mode 3840x2160@60Hz scale 2.0
 }
@@ -15,7 +18,13 @@ profile office-32-in-monitor {
 profile laptop-only {
 				output eDP-1 enable scale 2.0
 }
-
-profile desktop-odyssey-55-in-monitor {
-				output DP-1 enable scale 2.0
+###########################################################
+# Monitor
+###########################################################
+profile odyssey-55-in-monitor {
+				# 55 Inch Home Monitor
+				output "Samsung Electric Company Odyssey Ark H1AK500000" position 1920,0 mode 3840x2160@60Hz scale 2.0
+}
+profile 32-in-monitor {
+				output DP-1 enable scale 1.5
 }

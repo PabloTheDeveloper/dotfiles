@@ -1,0 +1,2 @@
+# Locks after 1h, suspends after 1hr.
+exec swayidle -w  timeout 3600 'swaylock -f -c 000000' timeout 3600 'systemctl suspend'

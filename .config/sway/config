@@ -1,22 +1,43 @@
 ###########################################################
-# Configs
+# General Configs
 ###########################################################
+# default config
+include /etc/sway/config.d/*
+# custom configs
 include ~/.config/sway/bindings
 include ~/.config/sway/appearance
 include ~/.config/sway/peripheral
-# TODO: what was this for again?
-include /etc/sway/config.d/*
-# TODO: Am I using this?
-# There's a arch linux article on using systemd to startup related services with sway. This is to do that for my .config/systemd/user/kanshi.service
-exec_always systemctl --user start sway-session.target
 ###########################################################
 # Startup
 ###########################################################
 # Clipboard
 exec copyq --start-server
-# displays off after 60m, Locks in 90m,
-exec swayidle -w  timeout 4800 'swaylock -f -c 000000' timeout 3600 'systemctl poweroff'
-# Sunset
-exec_always wlsunset -S "06:00" -s "17:30" -t 2500
+# Sunset (8pm - triggered)
+exec_always wlsunset -S "06:00" -s "20:00" -t 2500
 # Display
 exec_always exec kanshi
+
+# For Kanshi setup.
+# https://wiki.archlinux.org/title/Kanshi#Manage_kanshi_with_systemd
+exec_always systemctl --user start sway-session.target
+###########################################################
+# Apply Machine Specific Settings
+###########################################################
+#----------------------------------------------------------
+# Swayidle
+#----------------------------------------------------------
+# Locks after 15m, suspend in 90m.
+exec swayidle -w  timeout 900 'swaylock -f -c 000000' timeout 3600 'systemctl suspend'
+# * nuc:
+# 	* 900 -> 3600
+# * snapdragon:
+# 	* suspend -> poweroff
+include "~/.config/sway/machine/swayidle/$(cat /etc/hostname)"
+#----------------------------------------------------------
+# Lockscreen
+#----------------------------------------------------------
+# Suspends after 30m.
+bindsym $mod+escape exec 'swaylock -f -c 000000' timeout 1800 'systemctl suspend'
+# * snapdragon:
+# 	* suspend -> poweroff
+include "~/.config/sway/machine/lockscreen/$(cat /etc/hostname)"

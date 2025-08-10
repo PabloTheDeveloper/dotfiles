@@ -67,8 +67,7 @@ bindsym $mod+shift+period resize grow width 10px
 ###########################################################
 # Launcher
 bindsym $mod+Shift+p exec ~/.config/sway/scripts/wofi.sh
-# Lockscreen
-bindsym $mod+escape exec 'swaylock -f -c 000000'
+# Lockscreen defined in $SWAY/config
 # Logout
 bindsym $mod+Shift+w exec swaynag -t warning -m 'exit?' -B '[Y]' 'swaymsg exit'
 # Restart
@@ -79,12 +78,12 @@ bindsym $mod+w kill
 bindsym $mod+return exec $term
 # Volume
 bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
-bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -1%
-bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +1%
+bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -0.25%
+bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +0.25%
 bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
 # Backlight 
-bindsym --locked XF86MonBrightnessDown exec brightnessctl set 1%-
-bindsym --locked XF86MonBrightnessUp exec brightnessctl set 1%+
+bindsym --locked XF86MonBrightnessDown exec brightnessctl set 0.25%-
+bindsym --locked XF86MonBrightnessUp exec brightnessctl set 0.25%+
 # Screenshot
 bindsym Print exec grim
 # Clipboard

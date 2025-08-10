@@ -17,8 +17,9 @@ export TASKS="$HOME/journal/tasks.md"
 # Commands
 ###########################################################
 # Misc
-# TODO(pablothedeveloper): Make functions.
+# TODO(pablothedeveloper): Convert to fish functions.
 alias i="sh $SCRIPTS/i"
+alias b="bat"
 alias e='exit'
 #alias exit="echo \"Don't use this!\""
 alias ls='ls --color=auto'
@@ -30,6 +31,7 @@ alias ll='eza --header --long --no-permissions --no-user --binary --time "modifi
 alias godoc="godoc -http :8080"
 alias s='source $HOME/.bash_aliases && source $HOME/.generated_repo_aliases && source $CONFIG/fish/config.fish'
 # Git
+alias gl='git log'
 alias gs='git status'
 alias gd='git diff'
 alias ga='git add'

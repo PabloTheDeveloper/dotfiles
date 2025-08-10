@@ -1,12 +1,12 @@
 ###########################################################
 # Environment Variables
-###########################################################
-export CONFIG="$HOME/.config"
+########################################################### export SCRIPTS="$HOME/scripts" export CONFIG="$HOME/.config"
 export LOCAL="$HOME/.local"
 export SHARE="$LOCAL/share"
 export NVIM="$CONFIG/nvim"
 export SWAY="$CONFIG/sway"
 export FISH="$CONFIG/fish"
+export KITTY="$CONFIG/kitty"
 export GOPATH="$HOME/go"
 export BA="$HOME/.bash_aliases"
 export GI="$HOME/.gitignore"
@@ -18,15 +18,15 @@ export TASKS="$HOME/journal/tasks.md"
 ###########################################################
 # Misc
 # TODO(pablothedeveloper): Make functions.
-alias l='eza --header --long --no-permissions --no-user --binary --time "modified" --time-style "+%m/%d|%H:%M%p" --git --tree --level 2 --group-directories-first --total-size --sort modified --reverse --hyperlink --icons --color "always"'
-alias ll='eza --header --long --no-permissions --no-user --binary --time "modified" --time-style "+%m/%d|%H:%M%p" --git --tree --level 2 --group-directories-first --total-size --sort modified --reverse --hyperlink --icons --color "always" | batcat'
+alias i="sh $SCRIPTS/i"
 alias e='exit'
 #alias exit="echo \"Don't use this!\""
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias v="nvim"
 alias lynx="lynx -vikeys" # in vi mode.
-alias bat="batcat"
+alias l='eza --header --long --no-permissions --no-user --binary --time "modified" --time-style "+%m/%d|%H:%M%p" --git --tree --level 2 --group-directories-first --total-size --sort modified --reverse --hyperlink --icons --color "always"'
+alias ll='eza --header --long --no-permissions --no-user --binary --time "modified" --time-style "+%m/%d|%H:%M%p" --git --tree --level 2 --group-directories-first --total-size --sort modified --reverse --hyperlink --icons --color "always" | bat'
 alias godoc="godoc -http :8080"
 alias s='source $HOME/.bash_aliases && source $HOME/.generated_repo_aliases && source $CONFIG/fish/config.fish'
 # Git
@@ -63,7 +63,9 @@ alias cvs='$NVIM/snippets && v .'
 alias cvi='$NVIM && v init.lua'
 alias cvp='$NVIM/lua/plugins && v .'
 alias ck='$CONFIG/kanshi && v config'
-alias cf='$FISH && v config.fish'
+alias cb='$FISH && v config.fish'
+alias ct='$KITTY && v kitty.conf'
+
 # Personal Site
 alias site="$HOME/repos/sites/personal-site/docs && v ."
 alias reflect="$HOME/repos/sites/personal-site/docs/writings && v reflections.md"

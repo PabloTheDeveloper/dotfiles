@@ -24,33 +24,43 @@ vim.opt.paste = false             -- Paste text literally.
 -----------------------------------------------------------
 --- Remappings
 -----------------------------------------------------------
+local map = vim.keymap.set
+-- Move words.
+map({ "n", "i" }, "<C-Left>", "<Cmd>normal! B<CR>", { desc = "Move back a word" })
+map({ "n", "i" }, "<C-Right>", "<Cmd>normal! E<CR>", { desc = "Move forward a word" })
+-- Select words.
+map("v", "<C-S-Left>", "b", { desc = "Extend selection back a word" })
+map("v", "<C-S-Right>", "e", { desc = "Extend selection forward a word" })
+-- Delete words.
+map("n", "<C-BS>", "db", { desc = "Delete previous word" })
+map("n", "<C-Del>", "dw", { desc = "Delete next word" })
 -- Visual Block
-vim.api.nvim_set_keymap('n', '<A-v>', '<C-v>', { noremap = true, silent = false })
+map('n', '<C-v>', '<C-v>', { noremap = true, silent = false })
 -- Window Movements
-vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', { noremap = true, silent = false })
-vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', { noremap = true, silent = false })
-vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>k', { noremap = true, silent = false })
-vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', { noremap = true, silent = false })
-vim.api.nvim_set_keymap('n', '<C-=>', '<C-w>=', { noremap = true, silent = false })
-vim.api.nvim_set_keymap('n', '<A-n>', '<C-w>v', { noremap = true, silent = false })
-vim.api.nvim_set_keymap('n', '<A-S-n>', '<C-w>s', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<A-+>', '<C-w>+', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<A-_>', '<C-w>-', { noremap = true, silent = false })
-vim.api.nvim_set_keymap('n', '<A-=>', '<C-w>>', { noremap = true, silent = false })
-vim.api.nvim_set_keymap('n', '<A-->', '<C-w><', { noremap = true, silent = false })
+map('n', '<C-h>', '<C-w>h', { noremap = true, silent = false })
+map('n', '<C-j>', '<C-w>j', { noremap = true, silent = false })
+map('n', '<C-k>', '<C-w>k', { noremap = true, silent = false })
+map('n', '<C-l>', '<C-w>l', { noremap = true, silent = false })
+map('n', '<C-=>', '<C-w>=', { noremap = true, silent = false })
+map('n', '<C-n>', '<C-w>v', { noremap = true, silent = false })
+map('n', '<C-S-n>', '<C-w>s', { noremap = true, silent = true })
+map('n', '<C-+>', '<C-w>+', { noremap = true, silent = true })
+map('n', '<C-_>', '<C-w>-', { noremap = true, silent = false })
+-- map('n', '<C-=>', '<C-w>>', { noremap = true, silent = false })
+map('n', '<C-->', '<C-w><', { noremap = true, silent = false })
 -- Mimic Chrome / VsCode
 -- Remap Ctrl+Tab
-vim.api.nvim_set_keymap('n', '<C-tab>', ':tabnext', { noremap = true, silent = true })
+map('n', '<C-tab>', ':tabnext', { noremap = true, silent = true })
 -- Remap Ctrl+Shift+Tab
-vim.api.nvim_set_keymap('n', '<C-S-tab>', ':tabprev', { noremap = true, silent = true })
+map('n', '<C-S-tab>', ':tabprev', { noremap = true, silent = true })
 -- Remap Alt+D,Alt+Enter (duplicates tab)
-vim.api.nvim_set_keymap('n', '<A-d><A-CR>', ':tabnew %<CR>', { noremap = true, silent = true })
+map('n', '<C-d><C-CR>', ':tabnew %<CR>', { noremap = true, silent = true })
 -- Remap Ctrl+T (%:h == current_path but remove the last file path)
-vim.api.nvim_set_keymap('n', '<C-t>', ':tabnew<CR>', { noremap = true, silent = true })
+map('n', '<C-t>', ':tabnew<CR>', { noremap = true, silent = true })
 -- Remap Ctrl+W (be careful about saving)
-vim.api.nvim_set_keymap('n', '<C-w>', ':q<CR><CR>', { noremap = true, silent = true })
+map('n', '<C-w>', ':q<CR><CR>', { noremap = true, silent = true })
 -- Remap Ctrl+S
-vim.api.nvim_set_keymap('n', '<C-s>', ':w<CR>', { noremap = true, silent = true })
+map('n', '<C-s>', ':w<CR>', { noremap = true, silent = true })
 -----------------------------------------------------------
 --- Custom Commands
 -----------------------------------------------------------

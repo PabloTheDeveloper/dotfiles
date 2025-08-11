@@ -37,6 +37,7 @@ scripts/*
 !/.config/fish/
 !/.config/copyq/
 !/.config/kitty/
+!/.config/tmux/
 # Unignore directory contents
 !/.config/foot/**
 !/.config/nvim/**
@@ -48,3 +49,4 @@ scripts/*
 !/.config/fish/**
 !/.config/copyq/**
 !/.config/kitty/**
+!/.config/tmux/**

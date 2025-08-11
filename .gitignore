@@ -36,6 +36,7 @@ scripts/*
 !/.config/wofi/
 !/.config/fish/
 !/.config/copyq/
+!/.config/kitty/
 # Unignore directory contents
 !/.config/foot/**
 !/.config/nvim/**
@@ -46,3 +47,4 @@ scripts/*
 !/.config/wofi/**
 !/.config/fish/**
 !/.config/copyq/**
+!/.config/kitty/**

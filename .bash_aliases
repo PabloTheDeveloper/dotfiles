@@ -3,6 +3,9 @@
 ########################################################### export SCRIPTS="$HOME/scripts" export CONFIG="$HOME/.config"
 export LOCAL="$HOME/.local"
 export SHARE="$LOCAL/share"
+export APPLICATIONS="$SHARE/applications"
+export LAZY="$SHARE/nvim/lazy"
+export CARBONFOX="$LAZY/nightfox.nvim/extra/carbonfox"
 export NVIM="$CONFIG/nvim"
 export SWAY="$CONFIG/sway"
 export FISH="$CONFIG/fish"
@@ -13,6 +16,10 @@ export GI="$HOME/.gitignore"
 export PATH="$HOME/go/bin:$PATH"
 export JOURNAL="$HOME/journal/journal.md"
 export TASKS="$HOME/journal/tasks.md"
+
+# For Wayland Apps.
+# https://bbs.archlinux.org/viewtopic.php?id=303011
+export ELECTRON_OZONE_PLATFORM_HINT=auto
 ###########################################################
 # Commands
 ###########################################################
@@ -49,6 +56,7 @@ alias wifi-status="nmcli device status"
 # Project Starter
 alias project-starter="$HOME/repos/go/golang-project-starter/golang-project-starter --tmpls_path $HOME/repos/go/golang-project-starter/templates --absl_path $HOME/repos/go"
 alias github-sync="$HOME/repos/go/go-github-sync && go run . && $HOME && v -O $HOME/CHANGELOG.md +Outline +OutlineFocusCode +\"tabnew\" +\"e $HOME/PROJECTS.md\" +Outline +OutlineFocusOutline"
+
 ###########################################################
 # Frequently Edited Files
 ###########################################################
@@ -59,16 +67,22 @@ alias tasks="v -O $HOME/journal/tasks.md +Outline +OutlineFocusOutline"
 # Config
 alias ba="v $HOME/.bash_aliases"
 alias gi="v $HOME/.gitignore"
+alias c='v $CONFIG'
 alias cs='$SWAY && v .'
+alias csc='v $SWAY/config'
+alias csb='v $SWAY/bindings'
+alias csp='v $SWAY/peripheral'
+alias csm='v $SWAY/machine'
 alias cv='$NVIM && v .'
-alias cvs='$NVIM/snippets && v .'
+alias cvs='v $NVIM/snippets/markdown.snippets'
 alias cvi='$NVIM && v init.lua'
 alias cvp='$NVIM/lua/plugins && v .'
 alias ck='$CONFIG/kanshi && v config'
 alias cb='$FISH && v config.fish'
-alias ct='$KITTY && v kitty.conf'
-
+alias ctk='$KITTY && v kitty.conf'
+alias ctx='$CONFIG && v tmux/tmux.conf'
+alias cts='$KITTY && v session.conf'
 # Personal Site
 alias site="$HOME/repos/sites/personal-site/docs && v ."
 alias reflect="$HOME/repos/sites/personal-site/docs/writings && v reflections.md"
-
+alias greeting="bat $HOME/mission.md"

@@ -1,0 +1,13 @@
+#!/bin/bash
+hostname=$(cat /etc/hostname)
+# Only two machines using Arch.
+case $hostname in
+    "carbon" | "nuc")
+				alias b="bat"
+        ;;
+    *)
+				bat "$@"
+				batcat
+        ;;
+esac
+

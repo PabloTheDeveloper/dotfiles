@@ -1,0 +1,14 @@
+#!/bin/bash
+hostname=$(cat /etc/hostname)
+# Only two machines using Arch.
+case $hostname in
+    "carbon" | "nuc")
+        echo "Using Pacman."
+				sudo pacman -S "$@"
+        ;;
+    *)
+				echo "Use Apt."
+				sudo apt install "$@"
+        ;;
+esac
+

@@ -1,6 +1,8 @@
 ###########################################################
 # Environment Variables
-########################################################### export SCRIPTS="$HOME/scripts" export CONFIG="$HOME/.config"
+###########################################################
+export SCRIPTS="$HOME/scripts"
+export CONFIG="$HOME/.config"
 export LOCAL="$HOME/.local"
 export SHARE="$LOCAL/share"
 export APPLICATIONS="$SHARE/applications"

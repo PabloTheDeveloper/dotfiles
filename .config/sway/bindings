@@ -94,7 +94,7 @@ bindsym --locked XF86MonBrightnessUp exec brightnessctl set 0.25%+
 # Screenshot
 bindsym Print exec grim
 # Restart
-bindsym $mod+r reload
+bindsym $mod+Shift+r reload
 # Launcher
 bindsym $mod+Shift+p exec ~/.config/sway/scripts/wofi.sh
 # Lockscreen defined in $SWAY/config

@@ -69,12 +69,12 @@ bindsym $mod+shift+period resize grow width 10px
 ###########################################################
 # Application Bindings (TODO: create if not created)
 ###########################################################
-# Gemini
-bindsym $mod+a exec swaymsg "[app_id=\"brave-gdfaincndogidkdcdkhapmbffkckdkhn-Default\"] focus"
 # Browser
-bindsym $mod+b exec swaymsg "[app_id=\"brave-browser\"] focus"
+bindsym $mod+s exec swaymsg "[app_id=\"brave-browser\"] focus"
+# Gemini
+bindsym $mod+Shift+s exec swaymsg "[app_id=\"brave-gdfaincndogidkdcdkhapmbffkckdkhn-Default\"] focus"
 # Clipboard Manager
-bindsym $mod+c exec swaymsg "[app_id=\"com.github.hluk.copyq\"] focus" # startup app.
+bindsym $mod+Shift+a exec swaymsg "[app_id=\"com.github.hluk.copyq\"] focus" # startup app.
 # Terminal
 bindsym $mod+t exec swaymsg "[app_id=\"kitty\"] focus"
 # Clipboard Tray

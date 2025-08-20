@@ -20,11 +20,9 @@ The layout is -
 # Changelog 2025Q3
 ## TODOs
 ### Misc
+- [ ] Use https://github.com/bazelbuild/bazel
+- [ ] Use https://github.com/abseil/abseil-cpp
 - [ ] CopyQ doesn't copy with mod keys
-- [ ] Setup up Digma.
-    - [ ] Install Bazecor
-    - [ ] Import settings (from windows).
-- [ ] Setup dygma on linux (arm linux version won't work)
 - [ ] Setup Docker.
 - [ ] Setup Deepseek locally.
 - [ ] Setup search across all commits in a repo.
@@ -61,6 +59,11 @@ The layout is -
 - [ ] Test with a docker image.
 - [ ] Add shell script & alias which inserts some command to the
   end of both arch and snapdragon ubuntu setups.
+## 2025-08-20
+### Misc
+- [x] Setup up Digma.
+    - [x] Install Bazecor
+    - [x] Import settings (from windows).
 ## 2025-08-10
 ### Dotfiles
 - [x] Try out mod+c and mod+v (do on home computer)

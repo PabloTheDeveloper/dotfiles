@@ -62,7 +62,18 @@ The layout is -
 - [ ] Add shell script & alias which inserts some command to the
   end of both arch and snapdragon ubuntu setups.
 ## 2025-08-10
-- [ ] Try out mod+c and mod+v (do on home computer)
+### Dotfiles
+- [x] Try out mod+c and mod+v (do on home computer)
+- [x] Fix icons on desktop(awesome icons/fonts)
+- [x] Add script for per machine functionality for idlelock
+- [x] Create i command per computer.
+- [x] Use tabs instead of spaces.
+- [x] Setup copy and paste and cut and paste w/o format.
+- [x] Setup Ctrl+alt bindings in kitty for chrome like bindings.
+- [x] Sync "+y register with clipboard.
+- [x] Setup per app sway instances.
+- [x] Change vim bindings to use alt, change tmux to use ctrl, and change kitty
+  to use both.
 ## 2025-08-09
 ### Dotfiles
 - [x] Setup vertical git diff (heck ya!)

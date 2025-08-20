@@ -17,13 +17,17 @@
 !/.generated_repo_list.json
 !/.markdownlint.json
 # Where all the desktop files are.
-!.local/share/applications
+!/.local/share/applications/
+!/.local/share/applications/**
 # places my directories in specific places
 !/.config/user-dirs.dirs
 # use dark theme when possible
 !/.config/settings.ini
 # Scripts
-scripts/*
+scripts/
+!/scripts/
+!/scripts/**
+
 # Unignore directory
 .config/*
 !.config/

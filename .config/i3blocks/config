@@ -55,7 +55,7 @@ command=date '+Q%q'
 interval=18000 #= 5 * (3600 seconds = 60*60 seconds = 1 hr) = 5 hrs
 # Week 
 [time]
-command=echo W$(( $(date +%V) - $(date -d "$(date +%Y)-$(( (($(date +%-m) - 1) / 3) * 3 + 1 ))-01" +%V) + 1 ))
+command=echo W$(( $(date +%V) - $(date -d "$(date +%Y)-$(( (($(date +%-m) - 1) / 3) * 3 + 1 ))-01" +%V) + 1 ))/12
 interval=18000 #= 5 * (3600 seconds = 60*60 seconds = 1 hr) = 5 hrs
 # Day
 [time]

@@ -31,9 +31,12 @@ map({ "n", "i" }, "<C-Right>", "<Cmd>normal! E<CR>", { desc = "Move forward a wo
 -- Select words.
 map("v", "<C-S-Left>", "b", { desc = "Extend selection back a word" })
 map("v", "<C-S-Right>", "e", { desc = "Extend selection forward a word" })
--- Delete words.
+-- Delete words (normal).
 map("n", "<C-BS>", "db", { desc = "Delete previous word" })
 map("n", "<C-Del>", "dw", { desc = "Delete next word" })
+-- Delete words (insert).
+map("i", "<C-BS>", "<C-W>", { desc = "Delete previous word" })
+map("i", "<C-Del>", "<C-o>dw", { desc = "Delete next word" })
 -- Visual Block
 map('n', '<C-v>', '<C-v>', { noremap = true, silent = false })
 -- Window Movements

@@ -24,6 +24,10 @@ exec_always systemctl --user start sway-session.target
 # Apply Machine Specific Settings
 ###########################################################
 #----------------------------------------------------------
+# Executions
+#----------------------------------------------------------
+include "~/.config/sway/machine/$(cat /etc/hostname)"
+#----------------------------------------------------------
 # Swayidle
 #----------------------------------------------------------
 # Locks after 15m, suspend in 90m.

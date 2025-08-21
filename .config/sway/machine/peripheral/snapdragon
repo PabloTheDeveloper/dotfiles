@@ -1,0 +1,2 @@
+unbindswitch --reload lid:on
+bindswitch --reload lid:on exec 'swaylock -f -c 000000' timeout 900 'systemctl poweroff'

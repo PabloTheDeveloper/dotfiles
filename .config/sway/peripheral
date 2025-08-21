@@ -19,7 +19,7 @@ input "type:keyboard" {
 	repeat_delay 200
 	repeat_rate 150
 }
-bindswitch --reload lid:on exec 'systemctl suspend'
+bindswitch --reload lid:on exec 'systemctl hibernate'
 ###########################################################
 # Tablet
 ###########################################################
@@ -30,4 +30,8 @@ input "type:tablet_pad" {
 
 input "type:tablet_tool" {
 	left_handed true
-
+}
+###########################################################
+# Apply Machine Specific Settings
+###########################################################
+include "~/.config/sway/machine/peripheral/$(cat /etc/hostname)"

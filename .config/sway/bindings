@@ -127,10 +127,6 @@ bindsym $mod+Shift+Ctrl+w exec swaynag -t warning -m 'exit?' -B '[Y]' 'swaymsg e
 #----------------------------------------------------------
 bindsym $mod+$alt+1 exec ~/.config/sway/machine/scripts/1/$(cat /etc/hostname)
 #----------------------------------------------------------
-# Executions
-#----------------------------------------------------------
-include "~/.config/sway/machine/$(cat /etc/hostname)"
-#----------------------------------------------------------
 # Lockscreen
 #----------------------------------------------------------
 # Suspends after 30m.

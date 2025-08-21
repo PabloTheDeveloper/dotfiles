@@ -1,2 +1,2 @@
 unbindsym $mod+escape
-bindsym $mod+escape exec 'swaylock -f -c 000000' timeout 1800 'systemctl poweroff'
+bindsym $mod+escape exec 'swaylock -f -c 000000' timeout 900 'systemctl poweroff'

@@ -1,0 +1,49 @@
+#!/bin/bash
+
+swaymsg "workspace 1"
+
+swaymsg "layout splith"
+
+#----------------------------------------------------------
+# Left Split Tabbed Container
+#----------------------------------------------------------
+# foot w/ Task command
+swaymsg exec -- /usr/bin/foot
+sleep 2.0
+swaymsg "splith"
+# foot w/ Task Management command
+swaymsg exec -- /usr/bin/foot
+sleep 2.0
+swaymsg "layout tabbed"
+
+# Focus goes to toplevel split...
+swaymsg "focus parent"
+swaymsg "focus parent"
+#----------------------------------------------------------
+# Middle Split Tabbed Container
+#----------------------------------------------------------
+# Browser
+swaymsg exec -- brave --ozone-platform=wayland %U
+sleep 2.0
+# ... To split right
+swaymsg "splith"
+# Gemini
+swaymsg exec -- /opt/brave-bin/brave --profile-directory=Default --app-id=gdfaincndogidkdcdkhapmbffkckdkhn
+sleep 2.0
+swaymsg "layout tabbed"
+
+# Focus goes to toplevel split...
+swaymsg "focus parent"
+swaymsg "focus parent"
+#----------------------------------------------------------
+# Rightmost Split Tabbed Container
+#----------------------------------------------------------
+# Editor
+swaymsg exec -- /usr/bin/kitty
+sleep 2.0
+# ... To split right
+swaymsg "splith"
+swaymsg exec -- /usr/bin/kitty
+sleep 2.0
+# ... To split right
+swaymsg "layout tabbed"

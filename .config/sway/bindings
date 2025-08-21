@@ -2,6 +2,7 @@
 # Modifier/Variable Bindings
 ###########################################################
 set $mod Mod4
+set $alt Mod1
 set $term kitty
 # Move your focus around
 bindsym $mod+left focus left
@@ -48,19 +49,19 @@ bindsym $mod+Shift+9 move container to workspace 9; workspace 9
 bindsym $mod+Shift+0 move container to workspace 10; workspace 10
 # Layout
 mode "window-management" {
-	bindsym escape mode "default"
-	bindsym n splith
-	bindsym Shift+n splitv
+	bindsym ctrl+escape mode "default"
+	bindsym Shift+n splith
+	bindsym n splitv
 	bindsym t layout tabbed
 	bindsym s layout stacked
 	# bindsym $mod+a layout toggle split
-	bindsym alt+a focus parent
+	bindsym ctrl+a focus parent
 	bindsym f11 fullscreen
 	# Scratchpad
 	bindsym b move scratchpad
 	bindsym Shift+b scratchpad show
 }
-bindsym $mod+m mode "window-management"
+bindsym $mod+Ctrl+escape mode "window-management"
 # Resize
 bindsym $mod+plus resize grow height 10px
 bindsym $mod+underscore resize shrink height 10px
@@ -69,15 +70,31 @@ bindsym $mod+shift+period resize grow width 10px
 ###########################################################
 # Application Bindings (TODO: create if not created)
 ###########################################################
+#----------------------------------------------------------
+# Left Hand
+#----------------------------------------------------------
+#A---------------------------------------------------------
+# Task Manager
+bindsym $mod+a exec swaymsg "[app_id=\"foot\"] focus"
+# Clipboard Manager
+bindsym $mod+Shift+a exec swaymsg "[app_id=\"com.github.hluk.copyq\"] focus"
+#S---------------------------------------------------------
 # Browser
 bindsym $mod+s exec swaymsg "[app_id=\"brave-browser\"] focus"
 # Gemini
 bindsym $mod+Shift+s exec swaymsg "[app_id=\"brave-gdfaincndogidkdcdkhapmbffkckdkhn-Default\"] focus"
-# Clipboard Manager
-bindsym $mod+Shift+a exec swaymsg "[app_id=\"com.github.hluk.copyq\"] focus" # startup app.
+#D---------------------------------------------------------
+# Messages
+bindsym $mod+d exec swaymsg "[app_id=\"TODOGMessages\"] focus"
+# Calendar
+bindsym $mod+Shift+d exec swaymsg "[app_id=\"TODGCalendarO\"] focus"
+# Meet
+bindsym $mod+Ctrl+d exec swaymsg "[app_id=\"TODGMeetO\"] focus"
+#F---------------------------------------------------------
 # Terminal
-bindsym $mod+t exec swaymsg "[app_id=\"kitty\"] focus"
-# Clipboard Tray
+bindsym $mod+f exec swaymsg "[app_id=\"kitty\"] focus"
+
+#----------------------------------------------------------
 bindsym $mod+v exec copyq menu # Clipboard
 
 ###########################################################
@@ -99,6 +116,26 @@ bindsym $mod+Shift+r reload
 bindsym $mod+Shift+p exec ~/.config/sway/scripts/wofi.sh
 # Lockscreen defined in $SWAY/config
 # Close
-bindsym $mod+w kill
+bindsym $mod+Shift+w kill
 # Logout
-bindsym $mod+Shift+w exec swaynag -t warning -m 'exit?' -B '[Y]' 'swaymsg exit'
+bindsym $mod+Shift+Ctrl+w exec swaynag -t warning -m 'exit?' -B '[Y]' 'swaymsg exit'
+###########################################################
+# Apply Machine Specific Settings
+###########################################################
+#----------------------------------------------------------
+# Workspace 1 Bindings
+#----------------------------------------------------------
+bindsym $mod+$alt+1 exec ~/.config/sway/machine/scripts/1/$(cat /etc/hostname)
+#----------------------------------------------------------
+# Executions
+#----------------------------------------------------------
+include "~/.config/sway/machine/$(cat /etc/hostname)"
+#----------------------------------------------------------
+# Lockscreen
+#----------------------------------------------------------
+# Suspends after 30m.
+bindsym $mod+escape exec 'swaylock -f -c 000000' timeout 1800 'systemctl suspend'
+# * snapdragon:
+# 	* suspend -> poweroff
+include "~/.config/sway/machine/lockscreen/$(cat /etc/hostname)"
+

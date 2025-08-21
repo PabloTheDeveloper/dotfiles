@@ -1,0 +1,2 @@
+unbindsym $mod+escape
+bindsym $mod+escape exec 'swaylock -f -c 000000' timeout 1800 'systemctl hibernate'
